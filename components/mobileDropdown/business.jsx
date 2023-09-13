@@ -48,13 +48,13 @@ function setTitle() {
 		return (
 			<>
 				<AccordionItem value={`item-${i}`}>
-					<AccordionTrigger className="pr-7 text-lg ">
+					<AccordionTrigger className="pr-7 text-lg text-right">
 						{t.title}
 					</AccordionTrigger>
 					{t.subMenu.map((value) => {
 						return (
 							<>
-								<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer hover:bg-[#574bd1]/25 ">
+								<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-[#574bd1]/25 ">
 									<Link href={value.href} className="flex justify-between">
 										<span className="pr-7">{value.title}</span>
 										<BsChevronLeft className="ml-2 text-slate-500" />

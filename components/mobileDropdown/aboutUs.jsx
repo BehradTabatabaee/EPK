@@ -30,7 +30,7 @@ function setTitle() {
 	return titles.map((t) => {
 		return (
 			<>
-				<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer hover:bg-[#574bd1]/25">
+				<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-[#574bd1]/25">
 					<Link href={t.href} className="flex justify-between">
 						<span className="pr-4">{t.title}</span>
 						<BsChevronLeft className="ml-2 text-slate-500" />
