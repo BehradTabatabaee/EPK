@@ -19,7 +19,7 @@ const titles = [
 export default function AboutUs() {
 	return (
 		<>
-			<AccordionItem value="item-1">
+			<AccordionItem value="item-1" className="">
 				<AccordionTrigger className="pr-4 text-lg">درباره ما</AccordionTrigger>
 				{setTitle()}
 			</AccordionItem>

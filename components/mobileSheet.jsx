@@ -32,7 +32,7 @@ export default function MobileSheet() {
 				<SheetTrigger className=" mt-4 mr-3 w-9 h-9">
 					<CiMenuFries className="text-2xl m-auto text-white" />
 				</SheetTrigger>
-				<SheetContent className="w-[250px] overflow-hidden">
+				<SheetContent className="w-[250px] overflow-scroll">
 					<div className="bg-[#3d4e58] h-[10rem]">
 						<Link href={"/"} className="absolute">
 							<img
