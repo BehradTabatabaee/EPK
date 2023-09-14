@@ -19,13 +19,8 @@ export default function DesktopNavbar() {
 	return (
 		<>
 			<div className="hidden sm:flex flex-row gap-4 justify-between container">
-				{/* logo kar darad */}
 				<Link href={"/"}>
-					<img
-						src="second-logo.png"
-						alt="logo"
-						className="w-20 my-1 inline-block"
-					/>
+					<img src="second-logo.png" alt="logo" className="w-20 my-3" />
 				</Link>
 				<NavigationMenu className="flex pb-2">
 					<NavigationMenuList>

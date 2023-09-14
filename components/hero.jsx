@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+// ta tablet responsive e
+// faghat mobile monde v landscape mode sh
 export default function Hero() {
 	return (
 		<>
