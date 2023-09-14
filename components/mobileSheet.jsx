@@ -12,7 +12,6 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BsChevronDown, BsChevronLeft } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -21,10 +20,6 @@ import AboutUs from "./mobileDropdown/aboutUs";
 import Buisness from "./mobileDropdown/business";
 import Media from "./mobileDropdown/media";
 import Contact from "./mobileDropdown/contact";
-// scroll nadarad
-// button ha bayad kar shavad
-// har button component joda sakhte shavad
-// esm ein goh accardione
 export default function MobileSheet() {
 	return (
 		<>

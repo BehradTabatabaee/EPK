@@ -24,7 +24,7 @@ export default function DesktopNavbar() {
 					<img
 						src="second-logo.png"
 						alt="logo"
-						className="w-16 my-1 inline-block"
+						className="w-20 my-1 inline-block"
 					/>
 				</Link>
 				<NavigationMenu className="flex pb-2">
