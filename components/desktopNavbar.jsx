@@ -25,25 +25,33 @@ export default function DesktopNavbar() {
 				<NavigationMenu className="flex pb-2">
 					<NavigationMenuList>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger>ارتباط با ما</NavigationMenuTrigger>
+							<NavigationMenuTrigger className="text-xl">
+								ارتباط با ما
+							</NavigationMenuTrigger>
 							<NavigationMenuContent>
 								<Contact />
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger>رسانه ها</NavigationMenuTrigger>
+							<NavigationMenuTrigger className="text-xl">
+								رسانه ها
+							</NavigationMenuTrigger>
 							<NavigationMenuContent>
 								<Media />
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger>کسب و کار</NavigationMenuTrigger>
+							<NavigationMenuTrigger className="text-xl">
+								کسب و کار
+							</NavigationMenuTrigger>
 							<NavigationMenuContent>
 								<Buisness />
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger>درباره ما</NavigationMenuTrigger>
+							<NavigationMenuTrigger className="text-xl">
+								درباره ما
+							</NavigationMenuTrigger>
 							<NavigationMenuContent>
 								<AboutUs />
 							</NavigationMenuContent>
