@@ -1,11 +1,9 @@
 import NavBar from "./navbar";
-import Hero from "./hero";
 export default function Header() {
 	return (
 		<>
-			<div className=" bg-[url('../public/heroImg.jpg')] w-full min-[280px]:h-[29rem] min-[412px]:h-[33rem] min-[500px]:h-[34rem] min-[823px]:h-[30rem] min-[820px]:h-[50rem] min-[512px]:h-[35rem] min-[510px]:h-[20rem] h-[38rem] sm:h-[42rem] md:h-[50rem] min-[912px]:h-[33rem] lg:h-[31rem] xl:h-[37rem] 2xl:h-[40rem]">
+			<div className=" sm:bg-[#3d4e58] absolute sm:static w-full min-[280px]:h-[4rem] min-[412px]:h-[6rem] min-[500px]:h-[6rem] min-[823px]:h-[6rem] min-[820px]:h-[6rem] min-[512px]:h-[6rem] min-[510px]:h-[6rem] h-[7rem] sm:h-[7rem] md:h-[7rem] min-[912px]:h-[7rem] lg:h-[7rem] xl:h-[7rem] 2xl:h-[7rem]">
 				<NavBar />
-				<Hero />
 			</div>
 		</>
 	);
