@@ -12,14 +12,14 @@ const titles = [
 		title: "حوزه فناوری اطلاعات",
 		subMenu: [{ title: "گروه فانوس", href: "/" }],
 	},
-	{
-		title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
-		subMenu: [
-			{ title: "گروه آسانسور", href: "/" },
-			{ title: "گروه پله برقی", href: "/" },
-			{ title: "گروه بالابر های صنعتی", href: "/" },
-		],
-	},
+	// {
+	// 	title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
+	// 	subMenu: [
+	// 		{ title: "گروه آسانسور", href: "/" },
+	// 		{ title: "گروه پله برقی", href: "/" },
+	// 		{ title: "گروه بالابر های صنعتی", href: "/" },
+	// 	],
+	// },
 ];
 import Link from "next/link";
 export default function Buisness() {
