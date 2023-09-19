@@ -22,8 +22,8 @@ export default function Services() {
   return (
     <Tabs defaultValue="laptop" className="w-full text-center">
       <TabsList className="flex justify-center h-24 gap-10 bg-[#37464f]">
-        <TabsTrigger value="drop" className="text-6xl bg-[#7392a4] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"><PiDrop/></TabsTrigger>
-        <TabsTrigger value="laptop" className="text-6xl bg-[#7392a4] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"><PiLaptop/></TabsTrigger>
+        <TabsTrigger value="drop" className="text-6xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl  text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"><PiDrop/></TabsTrigger>
+        <TabsTrigger value="laptop" className="text-6xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"><PiLaptop/></TabsTrigger>
       </TabsList>
       <TabsContent value="laptop">
         <div dir="rtl">
