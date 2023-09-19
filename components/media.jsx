@@ -17,19 +17,28 @@ export default function Media() {
 						className="lg:w-[25rem] md:w-[20rem] sm:w-[15rem] w-[10rem] mt-2 lg:hidden"
 					/>
 				</div>
-				<div className="mt-12 flex gap-8 lg:gap-14 flex-wrap lg:flex-nowrap w-full justify-start items-start h-[70vh] md:h-[60vh] lg:h-[50vh] xl:h-[50vh] 2xl:h-[50vh]">
-					<Link href="/" className="bg-slate-500 w-full h-1/2 lg:h-full lg:w-full rounded-2xl">
-					</Link>
-					<div className="flex flex-col gap-8 justify-center h-full items-center w-full lg:items-end">
-						<Link href="/" className="w-full lg:w-full h-1/3 bg-slate-500 rounded-2xl">
-						</Link>
-						<Link href="/" className="w-full lg:w-full h-1/3 bg-slate-500 rounded-2xl">
-						</Link>
-						<Link href="/" className="w-full lg:w-full h-1/3 bg-slate-500 rounded-2xl">
-						</Link>
-						<Link href="/" className="flex justify-center items-center">
-							<h2 className="text-center text-2xl sm:text-3xl md:text-4xl xl:text-left ml-2 mt-2 border-b-2 border-transparent hover:border-[#9d300f] delay-75 duration-75">
+				<div className="mt-12 min-[844px]:h-[130vh] min-[890px]:h-[130vh] min-[912px]:h-[60vh] min-[914px]:h-[130vh] flex gap-2 md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6 flex-wrap lg:flex-nowrap w-full justify-start items-start h-[60vh] sm:h-[150vh] md:h-[70vh] lg:h-[65vh] xl:h-[55vh] 2xl:h-[45vh]">
+					<Link
+						href="/"
+						className="bg-slate-500 w-full h-1/4 lg:h-full lg:w-full rounded-2xl"
+					></Link>
+					<div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6 h-full items-center w-full lg:items-end">
+						<Link
+							href="/"
+							className="w-full lg:w-full h-1/4 bg-slate-500 rounded-2xl"
+						></Link>
+						<Link
+							href="/"
+							className="w-full lg:w-full h-1/4 bg-slate-500 rounded-2xl"
+						></Link>
+						<Link
+							href="/"
+							className="w-full lg:w-full h-1/4 bg-slate-500 rounded-2xl"
+						></Link>
+						<Link href="/" className="flex justify-center mt-6 items-center">
+							<h2 className="text-center text-2xl sm:text-3xl md:text-4xl xl:text-left ml-2 mt-2 group transition duration-300">
 								انتشارات و مقالات
+								<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 mt-1 bg-[#9d300f]"></span>
 							</h2>
 							<FiChevronLeft className="mt-2 text-2xl" />
 						</Link>

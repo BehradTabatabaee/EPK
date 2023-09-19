@@ -5,7 +5,7 @@ import Slogan from "@/components/sloganSection";
 export default function Home() {
 	return (
 		<>
-			<div className="h-[3000px]">
+			<div className="h-[3500px]">
 				<Hero />
 				<Slogan />
 				<Services />
