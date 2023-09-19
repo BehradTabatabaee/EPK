@@ -1,7 +1,19 @@
-export default function PhoneDropDown(){
+"use client"
+import { useRouter } from "next/navigation";
+import MobileSheet from "@/components/adminDashboard/navbar/MobileSheet"
+import { signOut } from "next-auth/react"
+export default function PhoneDropDown({session,data}){
+    const router = useRouter();
     return (
         <>
-        <div className="w-full h-20 bg-[#3d4e58] lg:hidden"></div>
+			<div className="flex lg:hidden relative">
+				<MobileSheet session={session}/>
+                <div className="absolute z-50 mt-4 ml-3 left-2"><button className="w-20 h-10 rounded-md hover:bg-opacity-80 bg-opacity-60 bg-white" onClick={() => {
+              signOut({ redirect: false }).then(() => {
+                router.push("/"); // Redirect to the home page after signing out
+              });
+            }}>خروج</button></div>
+			</div>
         </>
     )
 }

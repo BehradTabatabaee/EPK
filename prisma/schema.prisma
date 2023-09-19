@@ -13,8 +13,7 @@ datasource db {
 model User {
   id Int @id @default(autoincrement())
   user_name String @unique
-  first_name String 
-  last_name String 
+  name String 
   password String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
@@ -40,7 +39,8 @@ model Comment {
   id Int @id @default(autoincrement())
   name String
   email String
-  comment String 
+  comment String
+  is_seen Boolean
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 } 
@@ -48,6 +48,7 @@ model Comment {
 //TODO
 model Cooperation_request {
   id Int @id @default(autoincrement())
+  is_seen Boolean
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
