@@ -60,13 +60,13 @@ export default function DesktopNavbar() {
 				</NavigationMenu>
 				<div className="flex justify-center items-center gap-2 pb-4">
 					<Link href={"/"}>
-						<RiTwitterXLine className="text-xl text-white" />
+						<RiTwitterXLine className="text-xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 					<Link href={"/"}>
-						<AiFillLinkedin className="text-2xl text-white" />
+						<AiFillLinkedin className="text-2xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 					<Link href={"/"}>
-						<AiOutlineInstagram className="text-2xl text-white" />
+						<AiOutlineInstagram className="text-2xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 				</div>
 			</div>
