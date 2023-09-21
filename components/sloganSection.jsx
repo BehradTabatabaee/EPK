@@ -1,7 +1,7 @@
 export default function Slogan() {
 	return (
 		<>
-			<div className="bg-slate-200 flex flex-col justify-center items-center sm:h-[40rem] h-[35rem] pb-32">
+			<div className=" flex flex-col justify-center items-center sm:h-[40rem] h-[35rem] pb-32">
 				<span className="md:text-4xl sm:text-3xl text-2xl">شعار ما</span>
 				<img
 					src="footer-red.png"
