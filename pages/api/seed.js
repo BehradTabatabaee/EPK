@@ -27,6 +27,97 @@ export default async function GET(req, res) {
         name: "behrad Tabatabaee",
         password: "123456789",
       },
+      {
+        user_name: "smaEti1",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah1",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad1",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+      {
+        user_name: "smaEti2",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah2",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad2",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+      {
+        user_name: "smaEti3",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah3",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad3",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+      {
+        user_name: "smaEti4",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah4",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad4",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+      {
+        user_name: "smaEti5",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah5",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad5",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+      {
+        user_name: "smaEti6",
+        name: "Amin Ehterami",
+        password: "123456789",
+      },
+      {
+        user_name: "AliMah6",
+        name: "Ali Mahalati",
+        password: "123456789",
+      },
+      {
+        user_name: "Behrad6",
+        name: "behrad Tabatabaee",
+        password: "123456789",
+      },
+
     ],
   });
   await prisma.comment.createMany({
