@@ -24,7 +24,10 @@ export default function Media() {
 						<div className="w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl"></div>
 					</div>
 				</div>
-				<Link href="/" className="flex lg:ml-6 justify-center items-center lg:justify-end mt-10 lg:items-end">
+				<Link
+					href="/"
+					className="flex lg:ml-6 justify-center items-center lg:justify-end mt-10 lg:items-end"
+				>
 					<h2 className="text-center text-2xl sm:text-3xl md:text-4xl xl:text-left ml-2 mt-2 group transition duration-300">
 						انتشارات و مقالات
 						<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 mt-1 bg-[#9d300f]"></span>

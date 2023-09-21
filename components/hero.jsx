@@ -25,7 +25,7 @@ export default function Hero() {
 							<Link href={"/"} className="m-auto lg:mx-0 mt-4">
 								<Button
 									variant="outline"
-									className="w-24 sm:w-28 h-9 sm:text-[1rem] text-md text-slate-100 bg-[#ea7a0c] border-none shadow-lg"
+									className="w-24 sm:w-28 h-9 sm:text-[1rem] duration-300 text-md text-slate-100 bg-[#ea7a0c] border-none shadow-lg"
 								>
 									بیشتر بدانید
 								</Button>
