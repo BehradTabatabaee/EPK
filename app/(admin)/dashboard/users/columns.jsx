@@ -2,9 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { deleteUser } from "./page"
-// This type is used to define the shape of our data.
-// You can use a Zod schema here if you want.
+
 export const columns = [
   {
     accessorKey: "id",
@@ -34,8 +32,16 @@ export const columns = [
       const user = row.original
  
       return (
-        <Button variant="destructive" >حذف</Button>
+        <Button variant="destructive" onClick={() => deleteUser(user.id)}>حذف</Button>
       )
     },
   },
 ]
+
+async function deleteUser(id){
+  const response = await fetch(`/api/users/${id}`,{
+    method : "DELETE"
+  })
+  const data = await response.json();
+  window.location.reload();
+}

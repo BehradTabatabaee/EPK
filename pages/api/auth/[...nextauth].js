@@ -1,6 +1,6 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
-import { PrismaClient } from '@prisma/client'
+import { db } from '@/prisma/client'
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -16,8 +16,7 @@ export const authOptions = {
       },
       async authorize(credentials, req) {
         // Add logic here to look up the user from the credentials supplied
-        const prisma = new PrismaClient();
-        let user = await prisma.user.findFirst({
+        let user = await db.user.findFirst({
             where:{
                 user_name : credentials.username,
                 password : credentials.password

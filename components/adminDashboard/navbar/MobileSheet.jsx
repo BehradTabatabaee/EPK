@@ -61,13 +61,6 @@ export default function MobileSheet({ session }) {
 					</div>
 					<div className="flex flex-col">
 						{setTitle()}
-						{/* <NavLink href="/dashboard/users" text="مدیریت کاربران" />
-						<NavLink href="/" text="مدیریت گواهینامه ها و افتخارات" />
-						<NavLink href="/" text="مدیریت مقالات" />
-						<NavLink href="/" text="مدیریت نظرات و پیشنهادات" />
-						<NavLink href="/" text="مدیریت درخواست های همکاری" />
-						<NavLink href="/" text="مدیریت تامین کنندگان" />
-						<NavLink href="/" text="مدیریت تصاویر و ویدیو ها" /> */}
 						<hr />
 						<h1 className="sm:text-md text-sm text-center mt-5 p-2">
 							کاربر وارد شده :{" "}
@@ -80,21 +73,12 @@ export default function MobileSheet({ session }) {
 	);
 }
 
-// function NavLink(props) {
-// 	return (
-// 		<Link
-// 			className="w-full rounded-lg p-3 text-black text-md xl:text-lg "
-// 			href={props?.href}
-// 		>
-// 			{props?.text}
-// 		</Link>
-// 	);
-// }
 function setTitle() {
 	return titles.map((t) => {
 		return (
 			<>
 				<Link
+					key={t}
 					className="w-full p-6 text-black text-md xl:text-lg border-b hover:hover:bg-[#574bd1]/25 transition-all"
 					href={t?.href}
 				>

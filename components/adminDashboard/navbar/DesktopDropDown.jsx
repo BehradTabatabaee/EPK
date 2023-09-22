@@ -5,13 +5,13 @@ import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 const titles = [
-	{ title: "مدیریت کاربران", href: "/dashboard/users" },
-	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/" },
+	{ title: "مدیریت کاربران", href: "/dashboard/users" ,id : 1},
+	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/" ,id : 2},
 	{ title: "مدیریت مقالات", href: "/" },
-	{ title: "مدیریت نظرات و پیشنهادات", href: "/" },
-	{ title: "مدیریت درخواست های همکاری", href: "/" },
-	{ title: "مدیریت تامین کنندگان", href: "/" },
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/" },
+	{ title: "مدیریت نظرات و پیشنهادات", href: "/" ,id : 3},
+	{ title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
+	{ title: "مدیریت تامین کنندگان", href: "/" ,id : 5},
+	{ title: "مدیریت تصاویر و ویدیو ها", href: "/" ,id : 6},
 ];
 export default function DesktopDropDown({ session, data }) {
 	const router = useRouter();
@@ -28,7 +28,7 @@ export default function DesktopDropDown({ session, data }) {
 						</Link>
 						<hr className="text-white my-3" />
 					</div>
-					{setTitle()}
+					<SetTitle/>
 					{/* <NavLink href="/dashboard/users" text="مدیریت کاربران" />
 					<NavLink href="/" text="مدیریت گواهینامه ها و افتخارات" />
 					<NavLink href="/" text="مدیریت مقالات" />
@@ -74,17 +74,16 @@ export default function DesktopDropDown({ session, data }) {
 // 		</Link>
 // 	);
 // }
-function setTitle() {
+function SetTitle() {
 	return titles.map((t) => {
 		return (
-			<>
 				<Link
+					key={t?.id}
 					className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-md xl:text-lg transition-all"
 					href={t?.href}
 				>
 					{t?.title}
 				</Link>
-			</>
 		);
 	});
 }

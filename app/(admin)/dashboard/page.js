@@ -1,8 +1,7 @@
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { db } from "@/prisma/client";
 export default async function dashboard() {
-	const comment = await prisma.comment.findMany({ where: { is_seen: false } });
-	const coop = await prisma.cooperation_request.findMany({
+	const comment = await db.comment.findMany({ where: { is_seen: false } });
+	const coop = await db.cooperation_request.findMany({
 		where: { is_seen: false },
 	});
 	return (

@@ -17,10 +17,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Button } from "@/components/ui/button"
-// interface DataTableProps<TData, TValue> {
-//   columns: ColumnDef<TData, TValue>[]
-//   data: TData[]
-// }
 
 export function DataTable({
   columns,
@@ -35,7 +31,7 @@ export function DataTable({
 
   return (
     <div>
-    <div className="rounded-md border">
+    <div className="rounded-md border"> 
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (

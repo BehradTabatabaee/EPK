@@ -1,29 +1,12 @@
-import { PrismaClient } from "@prisma/client"
-const prisma = new PrismaClient();
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
-  
-export default async function edit({params}){
-    const user = await prisma.user.findFirstOrThrow({where : {id : parseInt(params.id)}})
-return (
-<Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-  </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
-  </CardFooter>
-</Card>
-
-    )
+import { db } from "@/prisma/client";
+import UserCard from "./userCard";
+export default async function edit({ params }) {
+  const user = await db.user.findFirstOrThrow({
+    where: { id: parseInt(params.id) },
+  });
+  return (
+    <div className="sm:w-full lg:w-5/12 container py-10 ">
+    <UserCard props={{...user, id : params.id}}/>
+    </div>
+  );
 }

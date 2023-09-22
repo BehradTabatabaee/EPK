@@ -1,16 +1,15 @@
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { db } from "@/prisma/client";
 export default async function GET(req, res) {
   //deleting all the data
-  await prisma.user.deleteMany();
-  await prisma.supplier.deleteMany();
-  await prisma.media.deleteMany();
-  await prisma.cooperation_request.deleteMany();
-  await prisma.comment.deleteMany();
-  await prisma.certificate.deleteMany();
-  await prisma.article.deleteMany();
+  await db.user.deleteMany();
+  await db.supplier.deleteMany();
+  await db.media.deleteMany();
+  await db.cooperation_request.deleteMany();
+  await db.comment.deleteMany();
+  await db.certificate.deleteMany();
+  await db.article.deleteMany();
   //crating users in DB
-  await prisma.user.createMany({
+  await db.user.createMany({
     data: [
       {
         user_name: "smaEti",
@@ -120,7 +119,7 @@ export default async function GET(req, res) {
 
     ],
   });
-  await prisma.comment.createMany({
+  await db.comment.createMany({
     data: [
       {
         name: "احمد ذوقی",
@@ -136,7 +135,7 @@ export default async function GET(req, res) {
       },
     ],
   });
-  await prisma.cooperation_request.createMany({
+  await db.cooperation_request.createMany({
     data: [
       {
         is_seen : false,
