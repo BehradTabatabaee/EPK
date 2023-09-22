@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
 	return (
 		<>
-			<div className=" bg-[#3d4e58] w-full min-[280px]:h-[27rem] min-[300px]:h-[30rem] min-[412px]:h-[33rem] min-[500px]:h-[34rem] min-[823px]:h-[25rem] min-[820px]:h-[25rem] min-[512px]:h-[30rem] min-[510px]:h-[20rem] min-[540px]:h-[34rem] h-[38rem] sm:h-[38rem] md:h-[40rem] min-[912px]:h-[25rem] lg:h-[31rem] xl:h-[30rem] 2xl:h-[35rem]">
+			<div className=" bg-gray-900 w-full min-[280px]:h-[27rem] min-[300px]:h-[30rem] min-[412px]:h-[33rem] min-[500px]:h-[34rem] min-[823px]:h-[25rem] min-[820px]:h-[25rem] min-[512px]:h-[30rem] min-[510px]:h-[20rem] min-[540px]:h-[34rem] h-[38rem] sm:h-[38rem] md:h-[40rem] min-[912px]:h-[25rem] lg:h-[31rem] xl:h-[30rem] 2xl:h-[35rem]">
 				<div className="flex flex-wrap-reverse justify-center sm:pt-8 min-[512px]:pt-5 mr-0 gap-7 md:mr-0 min-[1440px]:gap-46 min-[1280px]:gap-32 lg:gap-32 min-[540px]:pt-20">
 					<div className="flex flex-col sm:pt-2 lg:mt-0 mt-1 mr-2 lg:gap-6 md:gap-9 sm:mr-0 lg:items-center justify-center">
 						<div className="flex lg:flex-col lg:m-auto sm:gap-4 gap-3 justify-center md:mt-2 ">
@@ -25,7 +25,7 @@ export default function Hero() {
 							<Link href={"/"} className="m-auto lg:mx-0 mt-4">
 								<Button
 									variant="outline"
-									className="w-24 sm:w-28 h-9 sm:text-[1rem] text-md text-slate-100 bg-[#ea7a0c] border-none shadow-lg"
+									className="w-24 sm:w-28 h-9 sm:text-[1rem] duration-300 text-md text-slate-100 bg-[#ea7a0c] border-none shadow-lg"
 								>
 									بیشتر بدانید
 								</Button>

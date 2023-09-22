@@ -41,7 +41,7 @@ function setTitle() {
 						return (
 							<>
 								<Link href={value.href}>
-									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-[#574bd1]/25 ">
+									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 ">
 										{value.title}
 									</li>
 								</Link>

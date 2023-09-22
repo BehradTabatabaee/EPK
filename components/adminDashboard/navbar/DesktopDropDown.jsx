@@ -29,13 +29,6 @@ export default function DesktopDropDown({ session, data }) {
 						<hr className="text-white my-3" />
 					</div>
 					<SetTitle/>
-					{/* <NavLink href="/dashboard/users" text="مدیریت کاربران" />
-					<NavLink href="/" text="مدیریت گواهینامه ها و افتخارات" />
-					<NavLink href="/" text="مدیریت مقالات" />
-					<NavLink href="/" text="مدیریت نظرات و پیشنهادات" />
-					<NavLink href="/" text="مدیریت درخواست های همکاری" />
-					<NavLink href="/" text="مدیریت تامین کنندگان" />
-					<NavLink href="/" text="مدیریت تصاویر و ویدیو ها" /> */}
 					<hr />
 					<h2 className="text-lg text-white py-3 px-3 font-light">
 						کاربر وارد شده : {session.user.name}
@@ -64,16 +57,6 @@ export default function DesktopDropDown({ session, data }) {
 	);
 }
 
-// function NavLink(props) {
-// 	return (
-// 		<Link
-// 			className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-md xl:text-lg "
-// 			href={props?.href}
-// 		>
-// 			{props?.text}
-// 		</Link>
-// 	);
-// }
 function SetTitle() {
 	return titles.map((t) => {
 		return (
@@ -87,3 +70,4 @@ function SetTitle() {
 		);
 	});
 }
+

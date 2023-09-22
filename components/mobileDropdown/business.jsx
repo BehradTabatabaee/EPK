@@ -55,7 +55,7 @@ function setTitle() {
 						return (
 							<>
 								<Link href={value.href}>
-									<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-[#574bd1]/25 ">
+									<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-blue-500/50 duration-300 ">
 										<div className="flex justify-between">
 											<span className="pr-7">{value.title}</span>
 											<BsChevronLeft className="ml-2 text-slate-500" />
