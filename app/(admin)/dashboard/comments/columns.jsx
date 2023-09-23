@@ -51,7 +51,6 @@ async function deleteComment(id){
     method : "DELETE"
   })
   const data = await response.json();
-  console.log(data)
   window.location.reload();
 }
 
@@ -60,6 +59,5 @@ async function updateComment(id){
     method : "PUT"
   })
   const data = await response.json();
-  console.log(data)
   window.location.reload();
 }

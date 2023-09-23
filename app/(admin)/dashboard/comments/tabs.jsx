@@ -6,7 +6,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { DirectionProvider } from '@radix-ui/react-direction';
 
 export default function CommentTabs(props) {
-    console.log(props.seenData,props.unseenData)
   return (
         <DirectionProvider dir="rtl">
       <Tabs defaultValue="unseen" className="container flex flex-col justify-center ">
