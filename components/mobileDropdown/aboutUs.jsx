@@ -12,7 +12,7 @@ const titles = [
 	{ title: "HSEQ", href: "/" },
 	{ title: "سرمایه انسانی", href: "/" },
 	{ title: "مدیریت دانش", href: "/" },
-	{ title: "چشم انداز، اهداف و استراتژی", href: "/" },
+	{ title: "اهداف و استراتژی", href: "/" },
 	{ title: "بیانیه ماموریت", href: "/" },
 	{ title: "گواهینامه و افتخارات", href: "/" },
 ];
@@ -20,7 +20,9 @@ export default function AboutUs() {
 	return (
 		<>
 			<AccordionItem value="item-1" className="">
-				<AccordionTrigger className="pr-4 text-lg">درباره ما</AccordionTrigger>
+				<AccordionTrigger className="pr-4 text-md font-sans">
+					درباره ما
+				</AccordionTrigger>
 				{setTitle()}
 			</AccordionItem>
 		</>
@@ -33,8 +35,8 @@ function setTitle() {
 				<Link href={t.href}>
 					<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-blue-500/50 duration-300">
 						<div className="flex justify-between">
-							<span className="pr-4">{t.title}</span>
-							<BsChevronLeft className="ml-2 text-slate-500" />
+							<span className="pr-4 font-vazir">{t.title}</span>
+							<BsChevronLeft className="ml-2 text-slate-600 mt-1" />
 						</div>
 					</AccordionContent>
 				</Link>

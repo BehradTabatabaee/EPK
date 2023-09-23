@@ -32,7 +32,7 @@ function setTitle() {
 						return (
 							<>
 								<Link href={value.href}>
-									<li className="inline-block select-none space-y-1 rounded-md w-52 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 cursor-pointer">
+									<li className="inline-block select-none space-y-1 rounded-md w-60 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 cursor-pointer font-vazir">
 										{value.title}
 									</li>
 								</Link>

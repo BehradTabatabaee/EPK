@@ -5,7 +5,9 @@ export default function Media() {
 		<>
 			<div className="container min-w-fit mt-20">
 				<div className="flex flex-col items-center lg:items-start">
-					<h1 className="md:text-4xl sm:text-3xl text-2xl">رسانه ها</h1>
+					<h1 className="md:text-4xl sm:text-3xl text-2xl font-sans">
+						رسانه ها
+					</h1>
 					<img
 						src="divider-left.png"
 						alt="divider"
@@ -44,7 +46,7 @@ export default function Media() {
 						href="/"
 						className="inline-flex lg:ml-6 justify-center items-center lg:justify-end mt-10 lg:items-end"
 					>
-						<h2 className="text-center text-2xl sm:text-3xl md:text-4xl xl:text-left ml-2 mt-2 group transition duration-300">
+						<h2 className="text-center text-xl sm:text-2xl md:text-3xl xl:text-left ml-2 mt-2 group transition duration-300 font-sans">
 							انتشارات و مقالات
 							<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 mt-1 bg-[#9d300f]"></span>
 						</h2>

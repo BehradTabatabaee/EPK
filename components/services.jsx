@@ -17,22 +17,22 @@ import Elevator from "./servicesElevator";
 export default function Services() {
 	return (
 		<Tabs defaultValue="laptop" className="w-full text-center">
-			<TabsList className="flex justify-center h-24 gap-10 bg-gray-900">
+			<TabsList className="flex justify-center h-24 sm:gap-10 gap-5 bg-gray-900">
 				<TabsTrigger
 					value="elevator"
-					className="text-6xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"
+					className="sm:text-6xl text-5xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white data-[state=active]:duration-300"
 				>
 					<PiElevator />
 				</TabsTrigger>
 				<TabsTrigger
 					value="drop"
-					className="text-6xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl  text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"
+					className="sm:text-6xl text-5xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl  text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white data-[state=active]:duration-300"
 				>
 					<PiDrop />
 				</TabsTrigger>
 				<TabsTrigger
 					value="laptop"
-					className="text-6xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white"
+					className="sm:text-6xl text-5xl bg-[#7392a4] hover:bg-white hover:text-[#e9790d] rounded-2xl text-[#9d300f] data-[state=active]:bg-[#e9790d] data-[state=active]:text-white data-[state=active]:duration-300"
 				>
 					<PiLaptop />
 				</TabsTrigger>

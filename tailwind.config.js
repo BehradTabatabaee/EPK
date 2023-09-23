@@ -31,6 +31,12 @@ module.exports = {
 				"accordion-up": "accordion-up 0.3s ease-out",
 			},
 		},
+		fontFamily: {
+			sans: ["IRANSans"],
+			ghasem: ['"A Ghasem"'],
+			vazir: ['"Vazir"'],
+			delius: ['"Delius"'],
+		},
 	},
 	plugins: [require("tailwindcss-animate")],
 };
