@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     if (req.method === "POST") {
       try {
         const { email, name, comment } = req.body;
-        const result = await db.user.create({
+        const result = await db.comment.create({
           data: {
             name: name,
             email: email,
