@@ -133,6 +133,18 @@ export default async function GET(req, res) {
         comment: "مشکل داری ؟ مشکل داری ؟ بیناموس ما داریم زحمت میکشیم !!",
         is_seen : false,
       },
+      {
+        name: "احمد222222 ذوقی",
+        email: "ahmad@gm222222ail.com",
+        comment: "وای اینجاlol پارتیه ؟ وای ارشیا جونممممممممممممممم",
+        is_seen : true,
+      },
+      {
+        name: "پی222222شرو",
+        email: "reza@gm2222ail.com",
+        comment: "مشکل داری ؟ مشکل داری ؟lol بیناموس ما داریم زحمت میکشیم !!",
+        is_seen : true,
+      },
     ],
   });
   await db.cooperation_request.createMany({

@@ -8,8 +8,8 @@ const titles = [
 	{ title: "مدیریت کاربران", href: "/dashboard/users" ,id : 1},
 	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/" ,id : 2},
 	{ title: "مدیریت مقالات", href: "/" },
-	{ title: "مدیریت نظرات و پیشنهادات", href: "/" ,id : 3},
-	{ title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
+	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments" ,id : 3},
+	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
 	{ title: "مدیریت تامین کنندگان", href: "/" ,id : 5},
 	{ title: "مدیریت تصاویر و ویدیو ها", href: "/" ,id : 6},
 ];
@@ -46,10 +46,7 @@ export default function DesktopDropDown({ session, data }) {
 					</Button>
 					<hr className="my-3" />
 					<h2 className="text-lg text-white font-light">
-						کامنت های خوانده نشده : {data.commentCount}
-					</h2>
-					<h2 className="text-lg text-white py-2 font-light">
-						درخواست همکاری های خوانده نشده : {data.coopCount}
+						نظرات و پیشنهاد های خوانده نشده : {data.commentCount}
 					</h2>
 				</nav>
 			</div>
