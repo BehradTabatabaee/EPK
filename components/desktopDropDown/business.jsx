@@ -36,12 +36,14 @@ function setTitle() {
 		return (
 			<>
 				<div className="flex flex-col">
-					<span className="p-4 text-slate-600 text-md">{t.title}</span>
+					<span className="p-4 text-slate-600 text-md font-sans">
+						{t.title}
+					</span>
 					{t.subMenu.map((value) => {
 						return (
 							<>
 								<Link href={value.href}>
-									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 ">
+									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 font-vazir ">
 										{value.title}
 									</li>
 								</Link>

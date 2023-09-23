@@ -9,7 +9,7 @@ export default function Home() {
 				<Hero />
 				<Slogan />
 				<Services />
-				<Media/>
+				<Media />
 			</div>
 		</>
 	);

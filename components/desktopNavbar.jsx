@@ -20,12 +20,12 @@ export default function DesktopNavbar() {
 		<>
 			<div className="hidden sm:flex flex-row gap-4 justify-between container">
 				<Link href={"/"}>
-					<img src="second-logo.png" alt="logo" className="w-20 my-3" />
+					<img src="second-logo.png" alt="logo" className="md:w-20 w-16 my-3" />
 				</Link>
 				<NavigationMenu className="flex pb-2">
 					<NavigationMenuList>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								ارتباط با ما
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -33,7 +33,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								رسانه ها
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -41,7 +41,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								کسب و کار
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -49,7 +49,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								درباره ما
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>

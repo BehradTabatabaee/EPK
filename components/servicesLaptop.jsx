@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {FiChevronLeft} from "react-icons/fi"
+import { FiChevronLeft } from "react-icons/fi";
 export default function Oil() {
 	return (
 		<>
@@ -8,21 +8,21 @@ export default function Oil() {
 				<div className="flex items-center flex-wrap-reverse justify-center mr-0 gap-7 md:mr-0 min-[1440px]:gap-46 min-[1280px]:gap-32 lg:gap-32">
 					<div className="flex flex-col gap-6 sm:gap-8 md:gap-10 sm:pt-2 lg:mt-0 mt-1 mr-2 lg:gap-12 xl:gap-12 2xl:gap-16 sm:mr-0 lg:items-center justify-center">
 						<div className="flex lg:flex-col lg:m-auto sm:gap-4 gap-3 justify-center md:mt-2 ">
-							<h1 className="min-[1440px]:text-7xl md:text-6xl sm:text-5xl min-[280px]:text-4xl text-white sm:text-right">
+							<h1 className="min-[1440px]:text-7xl md:text-6xl sm:text-5xl min-[280px]:text-4xl text-white sm:text-right font-sans">
 								فناوری اطلاعات
 							</h1>
 						</div>
 						<div className="flex flex-col gap-2 items-center justify-center lg:mt-4 md:mt-0 mt-2">
-							<p className="min-[1440px]:w-[30rem] lg:text-2xl w-[17rem] min-[1440px]:text-4xl sm:w-[20rem] md:text-2xl lg:w-[20rem] sm:text-xl text-xl text-center sm:mt-4 md:mt-0 text-white mt-4">
+							<p className="min-[1440px]:w-[30rem] lg:text-2xl w-[17rem] min-[1440px]:text-3xl sm:w-[20rem] md:text-2xl lg:w-[20rem] sm:text-xl text-xl text-center sm:mt-4 md:mt-0 text-white mt-4 font-vazir">
 								متخصصین حوزه فناوری اطلاعات، آماده خدمت رسانی به شما عزیزان
 							</p>
 							<Link href={"/"} className="m-auto lg:mx-0 mt-8">
 								<Button
 									variant="outline"
-									className="w-36 sm:w-40 py-7 sm:text-xl text-md text-white bg-indigo-700 border-none shadow-lg rounded-3xl"
+									className="w-40 sm:w-48 py-8 sm:text-xl text-md text-white bg-indigo-700 border-none shadow-lg rounded-3xl font-sans"
 								>
 									اطلاعات بیشتر
-									<FiChevronLeft className="mt-1"/>
+									<FiChevronLeft className="mt-1 mr-1" />
 								</Button>
 							</Link>
 						</div>
