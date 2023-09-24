@@ -6,7 +6,7 @@ import { signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 const titles = [
 	{ title: "مدیریت کاربران", href: "/dashboard/users" ,id : 1},
-	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/" ,id : 2},
+	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/dashboard/certificates" ,id : 2},
 	{ title: "مدیریت مقالات", href: "/" },
 	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments" ,id : 3},
 	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},

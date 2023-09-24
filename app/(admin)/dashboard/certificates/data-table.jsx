@@ -68,7 +68,7 @@ export function DataTable({
           ) : (
             <TableRow>
               <TableCell colSpan={columns.length} className="h-24 text-center">
-              داده ای وجود ندارد.
+                داده ای وجود ندارد.
               </TableCell>
             </TableRow>
           )}

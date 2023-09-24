@@ -21,6 +21,7 @@ model User {
 
 model Certificate {
   id Int @id @default(autoincrement())
+  title String
   image String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
@@ -44,14 +45,6 @@ model Comment {
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 } 
-
-//TODO
-model Cooperation_request {
-  id Int @id @default(autoincrement())
-  is_seen Boolean
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
-}
 
 //TODO
 model Supplier {
