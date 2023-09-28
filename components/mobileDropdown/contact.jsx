@@ -8,7 +8,7 @@ import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
 	{ title: "اطلاعات تماس", href: "/" },
-	{ title: "پیشنهادات و انتقادات", href: "/" },
+	{ title: "پیشنهادات و انتقادات", href: "/feedback" },
 	{ title: "درخواست همکاری", href: "/" },
 	{ title: "لیست تامین کنندگان", href: "/" },
 ];

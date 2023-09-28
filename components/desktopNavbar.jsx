@@ -1,12 +1,9 @@
 import {
 	NavigationMenu,
 	NavigationMenuContent,
-	NavigationMenuIndicator,
 	NavigationMenuItem,
-	NavigationMenuLink,
 	NavigationMenuList,
 	NavigationMenuTrigger,
-	NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
@@ -62,7 +59,10 @@ export default function DesktopNavbar() {
 					<Link href={"/"}>
 						<RiTwitterXLine className="text-xl text-white hover:text-blue-500 duration-300" />
 					</Link>
-					<Link href={"/"}>
+					<Link
+						href={"https://www.linkedin.com/company/epkco/"}
+						target="_blank"
+					>
 						<AiFillLinkedin className="text-2xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 					<Link href={"/"}>

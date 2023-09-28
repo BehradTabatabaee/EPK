@@ -1,5 +1,3 @@
-// ye bug riz dare
-// bishtar az div linke kesh omade
 const titles = [
 	{
 		title: "حوزه نفت ، گاز و پتروشیمی",

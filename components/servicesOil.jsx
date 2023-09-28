@@ -9,7 +9,7 @@ export default function Oil() {
 					<div className="flex flex-col gap-6 sm:gap-8 md:gap-10 sm:pt-2 lg:mt-0 mt-1 mr-2 lg:gap-12 xl:gap-12 2xl:gap-16 sm:mr-0 lg:items-center justify-center">
 						<div className="flex lg:flex-col lg:m-auto sm:gap-4 gap-3 justify-center md:mt-2 ">
 							<h1 className="min-[1440px]:text-7xl md:text-6xl sm:text-5xl min-[280px]:text-4xl text-white sm:text-right font-sans">
-								روغن موتور، نفت و گاز
+								نفت ، گاز و پتروشیمی
 							</h1>
 						</div>
 						<div className="flex flex-col gap-2 items-center justify-center lg:mt-4 md:mt-0 mt-2">

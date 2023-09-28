@@ -5,13 +5,13 @@ import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 const titles = [
-	{ title: "مدیریت کاربران", href: "/dashboard/users" ,id : 1},
-	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/" ,id : 2},
+	{ title: "مدیریت کاربران", href: "/dashboard/users", id: 1 },
+	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/", id: 2 },
 	{ title: "مدیریت مقالات", href: "/" },
-	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments" ,id : 3},
+	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 3 },
 	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
-	{ title: "مدیریت تامین کنندگان", href: "/" ,id : 5},
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/" ,id : 6},
+	{ title: "مدیریت تامین کنندگان", href: "/", id: 5 },
+	{ title: "مدیریت تصاویر و ویدیو ها", href: "/", id: 6 },
 ];
 export default function DesktopDropDown({ session, data }) {
 	const router = useRouter();
@@ -28,7 +28,7 @@ export default function DesktopDropDown({ session, data }) {
 						</Link>
 						<hr className="text-white my-3" />
 					</div>
-					<SetTitle/>
+					<SetTitle />
 					<hr />
 					<h2 className="text-lg text-white py-3 px-3 font-light">
 						کاربر وارد شده : {session.user.name}
@@ -57,14 +57,13 @@ export default function DesktopDropDown({ session, data }) {
 function SetTitle() {
 	return titles.map((t) => {
 		return (
-				<Link
-					key={t?.id}
-					className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-md xl:text-lg transition-all"
-					href={t?.href}
-				>
-					{t?.title}
-				</Link>
+			<Link
+				key={t?.id}
+				className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-md xl:text-lg transition-all"
+				href={t?.href}
+			>
+				{t?.title}
+			</Link>
 		);
 	});
 }
-
