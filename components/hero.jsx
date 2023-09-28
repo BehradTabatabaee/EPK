@@ -20,7 +20,7 @@ export default function Hero() {
 						<span className="2xl:w-[500px] min-[1440px]:w-[530px] xl:w-[370px] lg:w-[360px] md:w-[380px] sm:w-[290px] w-[220px] bg-slate-300 h-[0.5px]"></span>
 						<div className="text-center mt-3 sm:mt-3 md:mt-0">
 							<span className="min-[1440px]:text-3xl md:text-2xl sm:text-xl min-[280px]:text-md text-slate-400 font-delius">
-								Exir Pouyan Karafan
+								Elixir Pouyan Karafan
 							</span>
 						</div>
 						<div className="flex flex-col gap-2 items-start justify-center lg:justify-end lg:mt-8 md:mt-5 mt-2">
