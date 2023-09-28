@@ -3,11 +3,11 @@ export default async function GET(req, res) {
   //deleting all the data
   try {
     await db.user.deleteMany();
-    await db.supplier.deleteMany();
+    // await db.supplier.deleteMany();
     await db.media.deleteMany();
     await db.comment.deleteMany();
     await db.certificate.deleteMany();
-    await db.article.deleteMany();
+    await db.news.deleteMany();
     //crating users in DB
     await db.user.createMany({
       data: [
@@ -60,11 +60,47 @@ export default async function GET(req, res) {
       data: [
         {
           title: "گواهینامه اول",
-          image: "",
+          image: "/1921860.jpg",
         },
         {
           title: "گواهینامه دوم",
-          image: "",
+          image: "/1921860.jpg",
+        },
+      ],
+    });
+    await db.news.createMany({
+      data: [
+        {
+          title: " خبر دست اول ",
+          image: "/1921860.jpg",
+          field : " لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوم"
+        },
+        {
+          title: " خبر دست اول دوم",
+          image: "/laptop.jpg",
+          field : "لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوم"
+        },
+        {
+          title: " خبر دست asasaاول دوم",
+          image: "/laptop.jpg",
+          field : "لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوم"
+        },
+        {
+          title: " خبر دست اوasasل دوم",
+          image: "/laptop.jpg",
+          field : "لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوم"
+        },
+      ],
+    });
+    await db.media.createMany({
+      data: [
+        {
+          title: "تصویر اول",
+          image: "/1921860.jpg",
+        },
+        {
+          title: "تصویر دوم",
+          image: "/laptop.jpg",
         },
       ],
     });

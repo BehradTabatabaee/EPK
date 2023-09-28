@@ -23,7 +23,6 @@ export const columns = [
     id: "show",
     cell: ({ row }) => {
       const certificate = row.original;
-
       return (
         <Dialog>
           <DialogTrigger asChild>

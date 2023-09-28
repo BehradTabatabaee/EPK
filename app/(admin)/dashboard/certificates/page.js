@@ -6,7 +6,7 @@ import Link from "next/link";
 export default async function certificates() {
   const data = await getData();
   return (
-    <div className="sm:w-full lg:w-7/12 container py-3 ">
+    <div className="container py-16 lg:py-8 overflow-y-scroll">
       <Link href={'/dashboard/certificates/create'}>
         <Button className="my-2">اضافه کردن گواهینامه جدید</Button>
       </Link>

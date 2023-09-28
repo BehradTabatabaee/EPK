@@ -19,7 +19,7 @@ export default function create() {
     password: "",
   });
   return (
-    <div className="sm:w-full lg:w-5/12 container py-10 ">
+    <section className="sm:w-full lg:w-5/12 container py-10 ">
       <Card>
         <CardHeader>
           <CardTitle>اضافه کردن کاربر</CardTitle>
@@ -65,13 +65,13 @@ export default function create() {
               })
             }
           />
-          <Button className="text-lg" onClick={() =>{ createUser(data);window.location.href = "/dashboard/users"}}>
+          <Button className="text-lg" onClick={() =>{ createUser(data);}}>
             اضافه کردن
           </Button>
         </CardContent>
         <CardFooter></CardFooter>
       </Card>
-    </div>
+    </section>
   );
 }
 async function createUser(data) {

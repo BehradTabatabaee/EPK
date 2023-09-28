@@ -5,7 +5,7 @@ import { db } from "@/prisma/client";
 export default async function users() {
   const [unseenData,seenData] = await getData();
   return (
-    <div className="sm:w-full lg:w-7/12 container py-6 ">
+    <div className="container py-16 lg:py-8 overflow-y-scroll">
         <CommentTabs unseenData={unseenData} seenData={seenData}/>
     </div>
   );

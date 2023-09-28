@@ -27,7 +27,7 @@ model Certificate {
   updated_at DateTime @updatedAt
 }
 
-model Article {
+model News {
   id Int @id @default(autoincrement())
   title String @db.VarChar(255)
   image String 
@@ -56,7 +56,7 @@ model Supplier {
 model Media {
   id Int @id @default(autoincrement())
   title String @db.VarChar(255)
-  field String
+  image String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }

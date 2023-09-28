@@ -16,8 +16,7 @@ const titles = [
 export default function DesktopDropDown({ session, data }) {
 	const router = useRouter();
 	return (
-		<>
-			<div className="absolute w-3/12 lg:w-[18rem] h-full bg-[#3d4e58] lg:block hidden right-0 overflow-scroll ">
+			<div className=" w-3/12 lg:w-[18rem] bg-[#3d4e58]  hidden lg:block h-screen overflow-scroll z-10 ">
 				<nav className="flex flex-col gap-2 w-full px-4">
 					<div>
 						<Link href={"/dashboard"}>
@@ -50,7 +49,6 @@ export default function DesktopDropDown({ session, data }) {
 					</h2>
 				</nav>
 			</div>
-		</>
 	);
 }
 

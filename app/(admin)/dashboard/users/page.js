@@ -6,12 +6,12 @@ import Link from "next/link";
 export default async function users() {
   const data = await getData();
   return (
-    <div className="sm:w-full lg:w-7/12 container py-3 ">
+    <section className="container py-16 lg:py-8 overflow-y-scroll">
       <Link href={'/dashboard/users/create'}>
         <Button className="my-2">اضافه کردن کاربر جدید</Button>
       </Link>
       <DataTable columns={columns} data={data} />
-    </div>
+    </section>
   );
 }
 

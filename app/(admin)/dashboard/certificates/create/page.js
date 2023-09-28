@@ -38,7 +38,7 @@ export default function create() {
             }
           />
           <UploadForm Data={data} SetData={setData}/>
-          <Button className="text-lg" onClick={() =>{ createCertificate(data);window.location.href = "/dashboard/certificates"}}>
+          <Button className="text-lg" onClick={() =>{ createCertificate(data);}}>
             اضافه کردن
           </Button>
         </CardContent>
@@ -54,5 +54,5 @@ async function createCertificate(data) {
         body: JSON.stringify(data)
     })
     const backeddata = await response.json();
-    console.log(backeddata)
+    return backeddata
 }
