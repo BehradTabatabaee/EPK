@@ -2,12 +2,11 @@ import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
 export default function Footer() {
 	return (
 		<>
 			<footer className="bg-gray-900 mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 p-12 py-6 w-full">
-				<div className="container min-w-[60vw] px-6 py-12 mx-auto">
+				<div className="sm:container min-w-[60vw] sm:px-6 py-12 mx-auto">
 					<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
 						<div className="sm:col-span-2">
 							<h1 className="max-w-lg text-xl font-semibold tracking-tight xl:text-2xl text-white font-sans">
@@ -108,7 +107,8 @@ export default function Footer() {
 								<RiTwitterXFill className="text-2xl" />
 							</Link>
 							<Link
-								href="#"
+								href={"https://www.linkedin.com/company/epkco/"}
+								target="_blank"
 								className="mx-2 transition-colors duration-300 text-gray-300 hover:text-blue-500"
 								aria-label="Linkedin"
 							>

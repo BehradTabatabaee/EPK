@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 import {
-	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,

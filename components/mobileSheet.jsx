@@ -1,17 +1,5 @@
-import {
-	Sheet,
-	SheetContent,
-	SheetDescription,
-	SheetHeader,
-	SheetTitle,
-	SheetTrigger,
-} from "@/components/ui/sheet";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Accordion } from "@/components/ui/accordion";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -25,7 +13,7 @@ export default function MobileSheet() {
 		<>
 			<Sheet>
 				<SheetTrigger className="absolute z-50 mt-4 mr-3 w-9 h-9">
-					<CiMenuFries className="text-2xl m-auto text-white" />
+					<CiMenuFries className="text-2xl m-auto text-black" />
 				</SheetTrigger>
 				<SheetContent className="w-[250px] overflow-scroll ">
 					<div className="bg-gray-900 h-[10rem]">
@@ -40,7 +28,10 @@ export default function MobileSheet() {
 							<Link href={"/"}>
 								<AiOutlineInstagram className="text-xl text-white hover:text-blue-500 duration-300" />
 							</Link>
-							<Link href={"/"}>
+							<Link
+								href={"https://www.linkedin.com/company/epkco/"}
+								target="_blank"
+							>
 								<AiFillLinkedin className="text-xl text-white hover:text-blue-500 duration-300" />
 							</Link>
 							<Link href={"/"}>
