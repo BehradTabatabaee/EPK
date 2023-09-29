@@ -17,13 +17,13 @@ export default function MobileSheet() {
 				</SheetTrigger>
 				<SheetContent className="w-[250px] overflow-scroll ">
 					<div className="bg-gray-900 h-[10rem]">
-						<Link href={"/"} className="absolute">
+						<a href={"/"} className="absolute">
 							<img
 								src="second-logo.png"
 								alt="logo"
 								className="w-16 pt-3 mr-2"
 							/>
-						</Link>
+						</a>
 						<div className="flex flex-col justify-center items-end gap-2 pt-3 pl-3">
 							<Link href={"/"}>
 								<AiOutlineInstagram className="text-xl text-white hover:text-blue-500 duration-300" />

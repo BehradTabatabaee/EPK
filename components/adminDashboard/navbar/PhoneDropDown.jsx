@@ -6,9 +6,11 @@ export default function PhoneDropDown({ session, data }) {
 	const router = useRouter();
 	return (
 		<>
-			<div className="flex lg:hidden relative">
-				<MobileSheet session={session} />
-				<div className="absolute z-50 mt-4 ml-3 left-2">
+			<div className="flex lg:hidden">
+				<div className="relative">
+					<MobileSheet session={session} />
+				</div>
+				<div className="absolute left-0 mt-4 ml-3">
 					<button
 						className="w-20 h-10 rounded-md hover:hover:bg-red-400 transition-all shadow-xl bg-opacity-60 bg-white"
 						onClick={() => {

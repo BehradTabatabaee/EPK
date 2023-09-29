@@ -33,7 +33,7 @@ function setTitle() {
 					{t.subMenu.map((value) => {
 						return (
 							<>
-								<Link href={value.href}>
+								<Link href={value.href} key={value.title}>
 									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 cursor-pointer font-vazir">
 										{value.title}
 									</li>
