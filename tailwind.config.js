@@ -38,5 +38,5 @@ module.exports = {
 			delius: ['"Delius"'],
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"),require('@tailwindcss/line-clamp')],
 };
