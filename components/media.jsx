@@ -72,7 +72,7 @@ export default async function Media() {
 				</div>
 				<div className="sm:text-left text-center">
 					<Link
-						href="/"
+						href="/news"
 						className="inline-flex lg:ml-6 justify-center items-center lg:justify-end mt-10 lg:items-end group transition duration-300"
 					>
 						<h2 className="text-center text-lg sm:text-xl md:text-2xl xl:text-left ml-0.5 mt-2 font-sans">
