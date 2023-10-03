@@ -12,12 +12,13 @@ import AboutUs from "./desktopDropDown/aboutUs";
 import Buisness from "./desktopDropDown/business";
 import Contact from "./desktopDropDown/contact";
 import Media from "./desktopDropDown/media";
+import Image from "next/image";
 export default function DesktopNavbar() {
 	return (
 		<>
 			<div className="hidden sm:flex flex-row gap-4 justify-between container">
 				<Link href={"/"}>
-					<img src="second-logo.png" alt="logo" className="md:w-20 w-16 my-3" />
+					<img src="/second-logo.png" alt="logo" className="md:w-20 w-16 my-3" />
 				</Link>
 				<NavigationMenu className="flex pb-2">
 					<NavigationMenuList>

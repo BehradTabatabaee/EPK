@@ -12,7 +12,6 @@ export default function Footer() {
 							<h1 className="max-w-lg text-xl font-semibold tracking-tight xl:text-2xl text-white font-sans">
 								عضویت در خبرنامه
 							</h1>
-
 							<div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
 								<input
 									id="email"
@@ -20,19 +19,16 @@ export default function Footer() {
 									className="px-4 py-1 pb-2 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300 font-delius text-xl lg:w-80 placeholder:font-vazir placeholder:text-xl"
 									placeholder="آدرس ایمیل"
 								/>
-
 								<button className="w-full px-6 py-2.5 text-lg font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 font-sans">
 									عضویت
 								</button>
 							</div>
 						</div>
-
 						<div>
 							<p className="font-semibold text-white font-sans">دسترسی سریع</p>
-
 							<div className="flex flex-col items-start mt-5 space-y-2 font-vazir">
 								<Link
-									href="#"
+									href="/"
 									className=" transition-colors duration-300 text-gray-300  hover:text-blue-500"
 								>
 									صفحه اصلی
@@ -50,14 +46,13 @@ export default function Footer() {
 									کسب و کار
 								</Link>
 								<Link
-									href="#"
+									href="/blog"
 									className=" transition-colors duration-300 text-gray-300  hover:text-blue-500"
 								>
-									رسانه ها
+									اخبار
 								</Link>
 							</div>
 						</div>
-
 						<div>
 							<p className="font-semibold text-white font-sans">دفتر مرکزی</p>
 							<div className="flex flex-col items-start mt-5 space-y-2 font-vazir">
@@ -89,9 +84,7 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-
 					<hr className="my-6 md:my-8 border-gray-700" />
-
 					<div className="md:flex-row items-center md:justify-between flex gap-12 flex-col">
 						<div>
 							<span className="text-white lg:text-2xl sm:text-lg md:text-xl text-md w-1/2 font-ghasem">
