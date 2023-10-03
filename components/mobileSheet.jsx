@@ -19,7 +19,7 @@ export default function MobileSheet() {
 					<div className="bg-gray-900 h-[10rem]">
 						<a href={"/"} className="absolute">
 							<img
-								src="second-logo.png"
+								src="/second-logo.png"
 								alt="logo"
 								className="w-16 pt-3 mr-2"
 							/>

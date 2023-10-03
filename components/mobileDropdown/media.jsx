@@ -8,16 +8,11 @@ import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
 	{
-		title: "انتشارات و مقاله ها",
-		subMenu: [
-			{ title: "حوزه نفت", href: "/" },
-			{ title: "حوزه فناوری", href: "/" },
-			{ title: "حوزه آسانسور", href: "/" },
-		],
-	},
-	{
 		title: "ارتباط رسانه ای",
-		subMenu: [{ title: "تصاویر و ویدیو ها", href: "/" }],
+		subMenu: [
+			{ title: "اخبار", href: "/blog" },
+			{ title: "تصاویر و ویدیو ها", href: "/" },
+		],
 	},
 ];
 export default function Media() {
