@@ -11,11 +11,11 @@ const titles = [
 		href: "/dashboard/certificates",
 		id: 2,
 	},
-	{ title: "مدیریت مقالات", href: "/" },
+	{ title: "مدیریت مقالات", href: "/dashboard/news" },
 	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 3 },
 	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
-	{ title: "مدیریت تامین کنندگان", href: "/", id: 5 },
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/", id: 6 },
+	// { title: "مدیریت تامین کنندگان", href: "/", id: 5 },
+	{ title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media", id: 6 },
 ];
 export default function DesktopDropDown({ session, data }) {
 	const router = useRouter();

@@ -4,11 +4,11 @@ import Link from "next/link";
 const titles = [
 	{ title: "مدیریت کاربران", href: "/dashboard/users" },
 	{ title: "مدیریت گواهینامه ها و افتخارات", href: "/dashboard/certificates" },
-	{ title: "مدیریت مقالات", href: "/" },
+	{ title: "مدیریت مقالات", href: "/dashboard/news" },
 	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments" },
 	// { title: "مدیریت درخواست های همکاری", href: "/" },
-	{ title: "مدیریت تامین کنندگان", href: "/" },
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/" },
+	// { title: "مدیریت تامین کنندگان", href: "/" },
+	{ title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media" },
 ];
 export default function MobileSheet({ session }) {
 	return (
