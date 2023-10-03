@@ -19,9 +19,16 @@ async function Mapper() {
 		return (
 			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-fit min-[1024px]:max-w-[33vw] min-[1440px]:max-w-[34vw] 2xl:max-w-[20vw] min-[1920px]:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
 				<img src={e.image} alt="" className="rounded-t-2xl h-fit w-full" />
-				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4">{e.title}</h1>
-				<p className="line-clamp-3 text-center sm:text-right sm:text-lg font-vazir px-4">{e.field}</p>
-				<a href={`/blog/${e.id}`} className="relative inline-block text-sm group duration-300 delay-75 sm:self-end m-5 mt-0">
+				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4">
+					{e.title}
+				</h1>
+				<p className="line-clamp-3 text-center sm:text-right sm:text-lg font-vazir px-4">
+					{e.field}
+				</p>
+				<a
+					href={`/blog/${e.id}`}
+					className="relative inline-block text-sm group duration-300 delay-75 sm:self-end m-5 mt-0"
+				>
 					<span className="relative z-10 block font-sans px-3 py-3 overflow-hidden font-medium leading-tight text-black transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
 						<span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
 						<span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
