@@ -5,7 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 export default function Footer() {
 	return (
 		<>
-			<footer className="bg-gray-900 mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 p-12 py-6 w-full">
+			<footer className="bg-gray-900  p-12 py-6 w-full mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
 				<div className="sm:container min-w-[60vw] sm:px-6 py-12 mx-auto">
 					<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
 						<div className="sm:col-span-2">

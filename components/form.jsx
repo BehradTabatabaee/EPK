@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Form() {
 	let [form, setForm] = useState({ userName: "", email: "", message: "" });
 	return (
-		<section className="bg-white dark:bg-gray-900 sm:pt-0 pt-8">
+		<section className="bg-white dark:bg-gray-900 sm:pt-0 pt-8 ">
 			<div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
 				<h2 className="mb-4 lg:text-4xl md:text-3xl text-2xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white font-sans">
 					نظرات، پیشنهادات و انتقادات
@@ -38,7 +38,7 @@ export default function Form() {
 							پست الکترونیکی
 						</label>
 						<input
-						dir="ltr"
+							dir="ltr"
 							type="email"
 							id="email"
 							className="block p-3 w-full sm:text-lg text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light font-delius"

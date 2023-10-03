@@ -1,10 +1,17 @@
 import { db } from "@/prisma/client";
+import { notFound, redirect } from "next/navigation";
 import { BsCalendarDate } from "react-icons/bs";
-import {FaRegClock} from "react-icons/fa"
+import { FaRegClock } from "react-icons/fa";
 export default async function BlogPage({ params }) {
+	if (isNaN(+params.slug)) {
+		notFound();
+	}
 	const data = await db.news.findUnique({
-		where: { id: parseInt(params.slug) },
+		where: { id: Number(params.slug) },
 	});
+	if (!data?.id) {
+		notFound();
+	}
 	return (
 		<>
 			<div className="container pt-20 flex justify-center items-center min-w-[70vw]">
@@ -21,7 +28,7 @@ export default async function BlogPage({ params }) {
 							</p>
 						</div>
 						<div className="flex min-[280px]:gap-2">
-                            <FaRegClock className="text-xl sm:text-2xl mt-0.5 sm:mt-[0.0625rem]"/>
+							<FaRegClock className="text-xl sm:text-2xl mt-0.5 sm:mt-[0.0625rem]" />
 							<p className="text-lg sm:text-xl font-delius">
 								{data.created_at.getHours()}:{data.created_at.getMinutes()}
 							</p>
