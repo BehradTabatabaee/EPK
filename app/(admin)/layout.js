@@ -1,4 +1,4 @@
-import "../globals.css";
+// import "../globals.css";
 import Navbar from "@/components/adminDashboard/navbar/Navbar";
 
 export const metadata = {
@@ -9,9 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" dir="rtl">
-			<body className="flex">
+			<body >
+				<section className="flex">
+
 				<Navbar />
 				{children}
+				</section>
 			</body>
 		</html>
 	);
