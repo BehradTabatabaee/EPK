@@ -8,7 +8,7 @@ export default async function users() {
 	return (
 		<section className="container py-16 lg:py-8 overflow-y-scroll">
 			<Link href={"/dashboard/users/create"}>
-				<Button className="my-2">اضافه کردن کاربر جدید</Button>
+				<Button className="my-2 font-sans">اضافه کردن کاربر جدید</Button>
 			</Link>
 			<DataTable columns={columns} data={data} />
 		</section>

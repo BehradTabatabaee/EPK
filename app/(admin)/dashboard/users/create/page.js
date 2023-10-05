@@ -28,11 +28,15 @@ export default function create() {
 					{setModal(isValid)}
 					<Card>
 						<CardHeader>
-							<CardTitle>اضافه کردن کاربر</CardTitle>
-							<CardDescription>همه های قسمت ها الزامی هستند.</CardDescription>
+							<CardTitle className="font-sans">اضافه کردن کاربر</CardTitle>
+							<CardDescription className="font-sans">
+								همه های قسمت ها الزامی هستند.
+							</CardDescription>
 						</CardHeader>
 						<CardContent className="flex flex-col gap-3">
-							<label htmlFor="user_name">نام کاربری :</label>
+							<label htmlFor="user_name" className="font-sans">
+								نام کاربری :
+							</label>
 							<Input
 								autoComplete="off"
 								type="text"
@@ -46,8 +50,11 @@ export default function create() {
 								}
 								required
 								title="لطفا فیلد را پر کنید"
+								className="font-delius"
 							/>
-							<label htmlFor="name">نام و نام خانوادگی :</label>
+							<label htmlFor="name" className="font-sans">
+								نام و نام خانوادگی :
+							</label>
 							<Input
 								autoComplete="off"
 								type="text"
@@ -61,8 +68,11 @@ export default function create() {
 								}
 								required
 								title="لطفا فیلد را پر کنید"
+								className="font-delius"
 							/>
-							<label htmlFor="password">رمز عبور : </label>
+							<label htmlFor="password" className="font-sans">
+								رمز عبور :{" "}
+							</label>
 							<Input
 								autoComplete="off"
 								type="text"
@@ -76,9 +86,10 @@ export default function create() {
 								}
 								required
 								title="لطفا فیلد را پر کنید"
+								className="font-delius"
 							/>
 							<Button
-								className="text-lg"
+								className="text-lg font-sans"
 								onClick={() => {
 									let response = createUser(data);
 									response.then((e) => {
