@@ -11,11 +11,11 @@ const titles = [
 		href: "/dashboard/certificates",
 		id: 2,
 	},
-	{ title: "مدیریت مقالات", href: "/dashboard/news" },
-	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 3 },
-	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 4},
-	// { title: "مدیریت تامین کنندگان", href: "/", id: 5 },
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media", id: 6 },
+	{ title: "مدیریت مقالات", href: "/dashboard/news", id: 3 },
+	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 4 },
+	// { title: "مدیریت درخواست های همکاری", href: "/" ,id : 5},
+	// { title: "مدیریت تامین کنندگان", href: "/", id: 6 },
+	{ title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media", id: 7 },
 ];
 export default function DesktopDropDown({ session, data }) {
 	const router = useRouter();
@@ -32,15 +32,16 @@ export default function DesktopDropDown({ session, data }) {
 							className="my-3 inline-block"
 						/>
 					</Link>
-					<span className="xl:text-lg text-base text-white block">
+					<span className="xl:text-lg text-base text-white block font-sans">
 						پنل مدیریت سایت اکسیرپویان کارافن
 					</span>
 					<hr className="text-white my-3" />
 				</div>
 				<SetTitle />
 				<hr />
-				<h2 className="text-lg text-white py-3 px-3 font-light">
-					کاربر وارد شده : {session.user.name}
+				<h2 className="text-lg text-white py-3 px-3 font-light font-vazir">
+					کاربر وارد شده :{" "}
+					<span className="font-delius">{session.user.name}</span>
 				</h2>
 				<Button
 					variant="destructive"
@@ -49,12 +50,12 @@ export default function DesktopDropDown({ session, data }) {
 							router.push("/"); // Redirect to the home page after signing out
 						});
 					}}
-					className="shadow-xl"
+					className="shadow-xl font-sans"
 				>
 					خروج
 				</Button>
 				<hr className="my-3" />
-				<h2 className="xl:text-lg text-base text-white font-light">
+				<h2 className="xl:text-lg text-base text-white font-light font-vazir">
 					نظرات و پیشنهاد های خوانده نشده : {data.commentCount}
 				</h2>
 			</nav>
@@ -67,7 +68,7 @@ function SetTitle() {
 		return (
 			<Link
 				key={t?.id}
-				className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-base xl:text-lg transition-all"
+				className="hover:bg-white hover:bg-opacity-60 w-full rounded-lg p-3 text-white hover:text-black text-base xl:text-lg transition-all font-sans"
 				href={t?.href}
 			>
 				{t?.title}

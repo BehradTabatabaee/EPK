@@ -21,14 +21,14 @@ export const columns = [
 	{
 		id: "show",
 		cell: ({ row }) => {
-			const certificate = row.original;
+			const media = row.original;
 			return (
 				<Dialog>
 					<DialogTrigger asChild>
 						<Button>نمایش</Button>
 					</DialogTrigger>
 					<DialogContent className="flex justify-center items-center">
-						<img src={`/${certificate.image}`} alt="certificate_img" />
+						<img src={`../${media.image}`} alt="media_img" />
 					</DialogContent>
 				</Dialog>
 			);
@@ -40,10 +40,7 @@ export const columns = [
 			const media = row.original;
 
 			return (
-				<Button
-					variant="destructive"
-					onClick={() => deleteMedia(media.id)}
-				>
+				<Button variant="destructive" onClick={() => deleteMedia(media.id)}>
 					حذف
 				</Button>
 			);
