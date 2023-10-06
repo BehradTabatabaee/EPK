@@ -23,7 +23,7 @@ export default function CreateBlog() {
 	});
 	return (
 		<>
-			<Card className="m-auto overflow-y-scroll">
+			<Card className="m-auto overflow-y-scroll sm:mt-2 mt-10">
 				<CardHeader>
 					<CardTitle className="mb-3 font-sans">اضافه کردن مقاله</CardTitle>
 				</CardHeader>
