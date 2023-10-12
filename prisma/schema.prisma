@@ -32,6 +32,7 @@ model News {
   title String @db.VarChar(255)
   image String 
   field String @db.Text
+  summary String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }

@@ -37,25 +37,12 @@ export default async function BlogPage({ params }) {
 					<img
 						src={`/${data.image}`}
 						alt=""
-						className="rounded-xl w-full h-fit"
+						className="rounded-xl w-full h-[30vh] md:h-[35vh] lg:h-[40vh] xl:h-[45vh] 2xl:h-[50vh] min-[1920px]:h-[55vh]"
 					/>
-					<p className="text-lg sm:text-xl md:text-2xl text-center sm:text-right font-vazir !leading-relaxed">
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-						{data.field}
-					</p>
+					<div
+						className="text-lg whitespace-pre-line sm:text-xl md:text-2xl text-center sm:text-right font-vazir !leading-relaxed"
+						dangerouslySetInnerHTML={{ __html: data.field }}
+					></div>
 				</div>
 			</div>
 		</>

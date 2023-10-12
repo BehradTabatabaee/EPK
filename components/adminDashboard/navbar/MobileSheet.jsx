@@ -9,7 +9,7 @@ const titles = [
 		href: "/dashboard/certificates",
 		id: 2,
 	},
-	{ title: "مدیریت مقالات", href: "/dashboard/news", id: 3 },
+	{ title: "مدیریت اخبار", href: "/dashboard/news", id: 3 },
 	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 4 },
 	// { title: "مدیریت درخواست های همکاری", href: "/",id:5 },
 	// { title: "مدیریت تامین کنندگان", href: "/",id:6 },
