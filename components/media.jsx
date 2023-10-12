@@ -27,13 +27,14 @@ export default async function Media() {
 						className="w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"
 					>
 						<div
-							className={`bg-[url('/${data[0].image}')] bg-cover bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-center pr-4 pt-12 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
+							style={{ backgroundImage: `url(${data[0].image})` }}
+							className={`bg-cover bg-center bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
 						>
 							<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 								{data[0].title}
 							</h1>
 							<p className="text-xs sm:text-base font-vazir md:text-lg 2xl:text-xl w-3/4 line-clamp-1">
-								{data[0].field}
+								{data[0].summary}
 							</p>
 						</div>
 					</Link>
@@ -43,13 +44,14 @@ export default async function Media() {
 							className="w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
 							<div
-								className={`bg-[url('/${data[1].image}')] bg-cover bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-center pr-4 pt-12 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
+								style={{ backgroundImage: `url(${data[1].image})` }}
+								className={`bg-cover bg-center bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
 							>
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[1].title}
 								</h1>
 								<p className="text-xs sm:text-base font-vazir md:text-lg 2xl:text-xl w-3/4 line-clamp-1">
-									{data[1].field}
+									{data[1].summary}
 								</p>
 							</div>
 						</Link>
@@ -58,13 +60,14 @@ export default async function Media() {
 							className="w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
 							<div
-								className={`bg-[url('/${data[2].image}')] bg-cover bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-center pr-4 pt-12 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
+								style={{ backgroundImage: `url(${data[2].image})` }}
+								className={`bg-cover bg-no-repeat bg-center w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
 							>
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[2].title}
 								</h1>
 								<p className="text-xs sm:text-base font-vazir md:text-lg 2xl:text-xl w-3/4 line-clamp-1">
-									{data[2].field}
+									{data[2].summary}
 								</p>
 							</div>
 						</Link>

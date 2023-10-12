@@ -17,14 +17,14 @@ async function Mapper() {
 	const data = await db.news.findMany();
 	return data.map((e) => {
 		return (
-			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-fit min-[1024px]:max-w-[33vw] min-[1440px]:max-w-[34vw] 2xl:max-w-[20vw] min-[1920px]:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
-				<img src={e.image} alt="" className="rounded-t-2xl h-fit w-full" />
+			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-screen min-[1024px]:max-w-[33vw] min-[1440px]:max-w-[34vw] 2xl:max-w-[20vw] min-[1920px]:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
+				<img src={e.image} alt="" className="rounded-t-2xl h-[25vh] w-full" />
 				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4">
 					{e.title}
 				</h1>
-				<p className="line-clamp-3 text-center sm:text-right sm:text-lg font-vazir px-4">
-					{e.field}
-				</p>
+				<div className="line-clamp-2 text-center sm:text-right sm:text-lg font-vazir px-4 max-w-[95%]" >
+					{e.summary}
+				</div>
 				<a
 					href={`/blog/${e.id}`}
 					className="relative inline-block text-sm group duration-300 delay-75 sm:self-end m-5 mt-0"
