@@ -1,5 +1,6 @@
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import vine from "@vinejs/vine";
 import { db } from "@/prisma/client";
 export default async function handler(req, res) {
   const session = await getServerSession(req, res, authOptions);
