@@ -12,8 +12,7 @@ export default function Slogan() {
 				/>
 				<div className="flex gap-32 sm:mt-6 mt-5">
 					<p className="md:text-2xl sm:text-xl md:mt-4 text-lg lg:w-[30rem] md:w-[25rem] sm:w-[20rem] w-[15rem] min-[280px]:w-[12rem] text-center font-vazir">
-						مشکل داری؟ مشکل داری؟ ما داریم زحمت میکشیم تو نمیدونی چه بلایی سر ما
-						اومده!!!
+کیفیت رقابتیست بی پایان!
 					</p>
 				</div>
 			</div>
