@@ -1,6 +1,7 @@
 import { FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
 import { db } from "@/prisma/client";
+import Image from "next/image";
 export default async function Media() {
 	const data = await db.news.findMany({ take: 3 });
 	return (
@@ -21,15 +22,13 @@ export default async function Media() {
 						className="lg:w-[25rem] md:w-[20rem] sm:w-[15rem] w-[10rem] mt-2 lg:hidden"
 					/>
 				</div>
-				<div className="flex flex-col lg:container h-[70vh] sm:h-[200vh] min-[720px]:h-[120vh] md:h-[90vh] min-[820px]:h-[70vh] min-[844px]:h-[130vh] min-[896px]:h-[140vh] min-[912px]:h-[80vh] min-[914px]:h-[150vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[100vh] gap-3 mt-12">
+				<div className="flex flex-col lg:container !p-0 h-[70vh] sm:h-[200vh] min-[720px]:h-[120vh] md:h-[90vh] min-[820px]:h-[70vh] min-[844px]:h-[130vh] min-[896px]:h-[140vh] min-[912px]:h-[80vh] min-[914px]:h-[150vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[80vh] gap-3 mt-12">
 					<Link
 						href={`/blog/${data[0].id}`}
-						className="w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"
+						className="relative w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"
 					>
-						<div
-							style={{ backgroundImage: `url(${data[0].image})` }}
-							className={`bg-cover bg-center bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
-						>
+						<Image src={`/${data[0].image}`} fill={true} priority={true} />
+						<div className="absolute bottom-12 sm:bottom-16 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 							<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 								{data[0].title}
 							</h1>
@@ -41,12 +40,10 @@ export default async function Media() {
 					<div className="flex sm:flex-nowrap flex-wrap flex-row h-2/3 sm:h-2/5 gap-3">
 						<Link
 							href={`/blog/${data[1].id}`}
-							className="w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
+							className="relative w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
-							<div
-								style={{ backgroundImage: `url(${data[1].image})` }}
-								className={`bg-cover bg-center bg-no-repeat w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
-							>
+							<Image src={`/${data[1].image}`} fill={true} priority={true} />
+							<div className="absolute bottom-11 sm:bottom-12 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[1].title}
 								</h1>
@@ -57,12 +54,10 @@ export default async function Media() {
 						</Link>
 						<Link
 							href={`/blog/${data[2].id}`}
-							className="w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
+							className="relative w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
-							<div
-								style={{ backgroundImage: `url(${data[2].image})` }}
-								className={`bg-cover bg-no-repeat bg-center w-full h-full gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 text-right flex flex-col justify-end pr-4 py-10 items-start sm:items-start sm:justify-end text-white sm:p-5 sm:pb-12`}
-							>
+							<Image src={`/${data[2].image}`} fill={true} priority={true} />
+							<div className="absolute bottom-11 sm:bottom-12 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[2].title}
 								</h1>

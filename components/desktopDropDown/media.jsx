@@ -3,7 +3,7 @@ const titles = [
 		title: "ارتباط رسانه ای",
 		subMenu: [
 			{ title: "اخبار", href: "/blog" },
-			{ title: "تصاویر و ویدیو ها", href: "/" },
+			// { title: "تصاویر و ویدیو ها", href: "/" },
 		],
 	},
 ];
