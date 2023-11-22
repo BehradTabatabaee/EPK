@@ -1,7 +1,7 @@
 const titles = [
 	[
-		{ title: "شرکت در یک نگاه", href: "/" },
-		{ title: "ارزش های محوری", href: "/" },
+		{ title: "شرکت در یک نگاه", href: "/about" },
+		{ title: "ارزش های محوری", href: "/values" },
 		{ title: "HSEQ", href: "/" },
 		{ title: "سرمایه انسانی", href: "/" },
 	],

@@ -7,10 +7,10 @@ import {
 import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
-	{ title: "اطلاعات تماس", href: "/" },
+	{ title: "اطلاعات تماس", href: "/contact" },
 	{ title: "پیشنهادات و انتقادات", href: "/feedback" },
-	{ title: "درخواست همکاری", href: "/" },
-	{ title: "لیست تامین کنندگان", href: "/" },
+	{ title: "درخواست همکاری", href: "/cooperation" },
+	// { title: "لیست تامین کنندگان", href: "/" },
 ];
 export default function Contact() {
 	return (

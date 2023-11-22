@@ -1,8 +1,8 @@
 const titles = [
-	{ title: "اطلاعات تماس", href: "/" },
+	{ title: "اطلاعات تماس", href: "/contact" },
 	{ title: "ارسال نظرات ، پیشنهادات و انتقادات", href: "/feedback" },
-	{ title: "درخواست همکاری", href: "/" },
-	{ title: "لیست تامین کنتدگان", href: "/" },
+	{ title: "درخواست همکاری", href: "/cooperation" },
+	// { title: "لیست تامین کنتدگان", href: "/" },
 ];
 import Link from "next/link";
 export default function Contact() {
