@@ -40,10 +40,10 @@ export default function Footer() {
 									شرکت در یک نگاه
 								</Link>
 								<Link
-									href="/"
+									href="/certificates"
 									className=" transition-colors duration-300 text-gray-300  hover:text-blue-500"
 								>
-									فناوری اطلاعات
+									گواهینامه و افتخارات
 								</Link>
 								<Link
 									href="/blog"

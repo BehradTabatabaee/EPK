@@ -11,7 +11,7 @@ const titles = [
 	{ title: "HSEQ", href: "/hseq" },
 	{ title: "سرمایه انسانی", href: "/human-resources" },
 	{ title: "مدیریت دانش", href: "/knowledge-management" },
-	{ title: "اهداف و استراتژی", href: "/" },
+	{ title: "اهداف و استراتژی", href: "/strategy" },
 	{ title: "بیانیه ماموریت", href: "/" },
 	{ title: "گواهینامه و افتخارات", href: "/certificates" },
 ];
