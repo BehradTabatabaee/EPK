@@ -12,7 +12,7 @@ const titles = [
 	{ title: "سرمایه انسانی", href: "/human-resources" },
 	{ title: "مدیریت دانش", href: "/knowledge-management" },
 	{ title: "اهداف و استراتژی", href: "/strategy" },
-	{ title: "بیانیه ماموریت", href: "/" },
+	{ title: "بیانیه ماموریت", href: "/mission-statement" },
 	{ title: "گواهینامه و افتخارات", href: "/certificates" },
 ];
 export default function AboutUs() {
