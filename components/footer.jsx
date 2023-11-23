@@ -34,16 +34,16 @@ export default function Footer() {
 									صفحه اصلی
 								</Link>
 								<Link
-									href="#"
+									href="/about"
 									className="transition-colors duration-300 text-gray-300  hover:text-blue-500"
 								>
-									درباره ما
+									شرکت در یک نگاه
 								</Link>
 								<Link
-									href="#"
+									href="/"
 									className=" transition-colors duration-300 text-gray-300  hover:text-blue-500"
 								>
-									کسب و کار
+									فناوری اطلاعات
 								</Link>
 								<Link
 									href="/blog"
@@ -79,7 +79,8 @@ export default function Footer() {
 									href="#"
 									className=" transition-colors duration-300 text-gray-300"
 								>
-									پست الکترونیکی : EPK@gmail.com
+									پست الکترونیکی :{" "}
+									<span className="font-delius">EPK@gmail.com</span>
 								</p>
 							</div>
 						</div>

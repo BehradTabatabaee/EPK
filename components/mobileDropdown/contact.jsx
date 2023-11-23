@@ -4,7 +4,6 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
 	{ title: "اطلاعات تماس", href: "/contact" },

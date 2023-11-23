@@ -25,10 +25,10 @@ export default function Hero() {
 						</div>
 						<div className="flex flex-col gap-2 items-start justify-center lg:justify-end lg:mt-8 md:mt-5 mt-2">
 							<p className=" min-[1440px]:w-[30rem] lg:text-lg w-[12rem] min-[1440px]:text-xl sm:w-[18rem] md:text-base lg:w-[21rem] md:w-[20rem] sm:text-xl text-sm text-center lg:text-right sm:mt-7 md:mt-0 mr-7 min-[280px]:mr-3 sm:mr-0 md:mr-6 lg:mr-0 text-slate-200 mt-2 font-vazir">
-								درباره اکسیر پویان کارافن اینکه شرکت خوبیه و خیلی قشنگ و عالیه و
-								خوب عالیه خلاصه.
+								شرکت اکسیر پویان کارافن با مسئولیت محدود در سال 1396 و پس از اخذ
+								مجوز های لازم از مراجع ذیربط تاسیس گردید{" "}
 							</p>
-							<Link href={"/"} className="m-auto lg:mx-0 mt-4">
+							<Link href={"/about"} className="m-auto lg:mx-0 mt-4">
 								<Button
 									variant="outline"
 									className="w-28 sm:w-32 h-10 sm:text-[1rem] duration-300 text-sm text-slate-100 bg-[#ea7a0c] border-none shadow-lg font-sans"

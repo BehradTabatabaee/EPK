@@ -22,7 +22,7 @@ function setTitle() {
 		return (
 			<>
 				<div className="flex flex-col">
-					<span className="p-4 text-slate-600 text-md font-sans">
+					<span className="p-4 text-slate-500 text-md font-sans">
 						{t.title}
 					</span>
 					{t.subMenu.map((value) => {
