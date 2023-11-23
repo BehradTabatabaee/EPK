@@ -8,7 +8,7 @@ const titles = [
 	[
 		{ title: "مدیریت دانش", href: "/knowledge-management" },
 		{ title: "چشم انداز، اهداف و استراتژی", href: "/strategy" },
-		{ title: "بیانیه ماموریت", href: "/" },
+		{ title: "بیانیه ماموریت", href: "/mission-statement" },
 		{ title: "گواهینامه و افتخارات", href: "/certificates" },
 	],
 ];
