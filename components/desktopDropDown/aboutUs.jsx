@@ -6,7 +6,7 @@ const titles = [
 		{ title: "سرمایه انسانی", href: "/human-resources" },
 	],
 	[
-		{ title: "مدیریت دانش", href: "/" },
+		{ title: "مدیریت دانش", href: "/knowledge-management" },
 		{ title: "چشم انداز، اهداف و استراتژی", href: "/" },
 		{ title: "بیانیه ماموریت", href: "/" },
 		{ title: "گواهینامه و افتخارات", href: "/certificates" },

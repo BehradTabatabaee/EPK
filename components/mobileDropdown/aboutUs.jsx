@@ -10,7 +10,7 @@ const titles = [
 	{ title: "ارزش های محوری", href: "/values" },
 	{ title: "HSEQ", href: "/hseq" },
 	{ title: "سرمایه انسانی", href: "/human-resources" },
-	{ title: "مدیریت دانش", href: "/" },
+	{ title: "مدیریت دانش", href: "/knowledge-management" },
 	{ title: "اهداف و استراتژی", href: "/" },
 	{ title: "بیانیه ماموریت", href: "/" },
 	{ title: "گواهینامه و افتخارات", href: "/certificates" },
