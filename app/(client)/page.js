@@ -8,7 +8,7 @@ export default function Home() {
 			<div>
 				<Hero />
 				<Slogan />
-				<Services/>
+				<Services />
 				<Media />
 			</div>
 		</>

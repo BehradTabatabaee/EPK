@@ -4,7 +4,6 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
 	{
@@ -16,7 +15,7 @@ const titles = [
 	},
 	{
 		title: " فناوری اطلاعات",
-		subMenu: [{ title: "گروه فانوس", href: "/" }],
+		subMenu: [{ title: "InSite Group", href: "/" }],
 	},
 	{
 		title: " آسانسور ، پله برقی و بالابرهای صنعتی",

@@ -8,7 +8,7 @@ const titles = [
 	},
 	{
 		title: "حوزه فناوری اطلاعات",
-		subMenu: [{ title: "گروه فانوس", href: "/" }],
+		subMenu: [{ title: "InSite Group", href: "/" }],
 	},
 	{
 		title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
@@ -34,14 +34,14 @@ function setTitle() {
 		return (
 			<>
 				<div className="flex flex-col items-end">
-					<span className="p-4 text-slate-600 text-md font-sans">
+					<span className="p-4 text-slate-500 text-md font-sans">
 						{t.title}
 					</span>
 					{t.subMenu.map((value) => {
 						return (
 							<>
 								<Link href={value.href} key={value.title} className="w-fit">
-									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 font-vazir ">
+									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 font-vazir">
 										{value.title}
 									</li>
 								</Link>
