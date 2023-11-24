@@ -13,7 +13,7 @@ const titles = [
 	{ title: "مدیریت نظرات و پیشنهادات", href: "/dashboard/comments", id: 4 },
 	// { title: "مدیریت درخواست های همکاری", href: "/",id:5 },
 	// { title: "مدیریت تامین کنندگان", href: "/",id:6 },
-	{ title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media", id: 7 },
+	// { title: "مدیریت تصاویر و ویدیو ها", href: "/dashboard/media", id: 7 },
 ];
 export default function MobileSheet({ session }) {
 	return (

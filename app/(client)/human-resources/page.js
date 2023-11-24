@@ -5,12 +5,6 @@ export default function HumanResources() {
         <h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-sans text-center border border-l-0 border-t-0 border-b-[2px] pb-2 border-r-0 lg:border lg:border-l-0 lg:border-t-0 lg:border-b-0 lg:px-2 lg:border-r-[3px] border-orange-700">
           سرمایه انسانی
         </h1>
-        {/* 
-        <img
-          src="footer-red.png"
-          alt="divider"
-          className="lg:w-[25rem] md:w-[20rem] sm:w-[15rem] w-[10rem] mt-2"
-        /> */}
       </div>
       <p className=" w-full text-slate-600  text-justify lg:text-justify px-2 py-10 !leading-10  text-sm sm:text-base md:text-lg lg:text-sm min-[1175px]:text-sm min-[1300px]:text-base 2xl:text-base min-[2160px]:text-lg  font-vazir">
         در دنیای امروز که فناوری و دانش نقش مهمی در رشد و توسعه صنایع مختلف
