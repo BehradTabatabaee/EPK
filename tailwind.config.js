@@ -11,7 +11,10 @@ module.exports = {
 		screens: {
 			// DONT USE THESE ! PLEASE, FOR UR OWN SANITY's SAKE! DONT USE THESE
 			fold: "280px",
+			sfold: "281px",
 			xfold: "300px",
+			xsfold: "320px",
+			xssfold: "326px",
 			xxfold: "412px",
 			xs: "420px",
 			xxs: "500px",
@@ -25,7 +28,8 @@ module.exports = {
 			lg: "1024px",
 			xl: "1280px",
 			"2xl": "1536px",
-		  },
+			pc: "1920px",
+		},
 		container: {
 			center: true,
 			padding: "2rem",
