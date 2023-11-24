@@ -6,23 +6,13 @@ export default async function Media() {
 	const data = await db.news.findMany({ take: 3 });
 	return (
 		<>
-			<div className="container min-w-fit mt-20">
+			<div className="container lg:max-w-[90vw] xl:max-w-[80vw] 2xl:max-w-[70vw] min-w-fit mt-20">
 				<div className="flex flex-col items-center lg:items-start">
-					<h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-sans">
+					<h1 className="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-sans border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0 border-orange-700">
 						رسانه ها
 					</h1>
-					<img
-						src="divider-left.png"
-						alt="divider"
-						className="lg:w-[25rem] md:w-[20rem] sm:w-[15rem] w-[10rem] mt-2 hidden lg:block"
-					/>
-					<img
-						src="footer-red.png"
-						alt="divider"
-						className="lg:w-[25rem] md:w-[20rem] sm:w-[15rem] w-[10rem] mt-2 lg:hidden"
-					/>
 				</div>
-				<div className="flex flex-col lg:container !p-0 h-[70vh] sm:h-[200vh] min-[720px]:h-[120vh] md:h-[90vh] min-[820px]:h-[70vh] min-[844px]:h-[130vh] min-[896px]:h-[140vh] min-[912px]:h-[80vh] min-[914px]:h-[150vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[80vh] gap-3 mt-12">
+				<div className="flex flex-col !w-full !p-0 h-[70vh] sm:h-[200vh] min-[720px]:h-[120vh] md:h-[90vh] min-[820px]:h-[70vh] min-[844px]:h-[130vh] min-[896px]:h-[140vh] min-[912px]:h-[80vh] min-[914px]:h-[150vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[80vh] gap-3 mt-12">
 					<Link
 						href={`/blog/${data[0].id}`}
 						className="relative w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"

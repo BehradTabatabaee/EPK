@@ -10,7 +10,7 @@ export default function UploadForm({ Data, SetData }) {
 			const i = event.target.files[0];
 			setImage(i);
 			setCreateObjectURL(URL.createObjectURL(i));
-			SetData({ ...Data, image: "uploads/" + i.name });
+			SetData({ ...Data, image: i.name });
 		}
 	};
 

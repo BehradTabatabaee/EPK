@@ -29,6 +29,7 @@ module.exports = {
 			xl: "1280px",
 			"2xl": "1536px",
 			pc: "1920px",
+			xpc: "2560px",
 		},
 		container: {
 			center: true,
@@ -54,10 +55,10 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			sans: ["IRANSans"],
-			ghasem: ['"A Ghasem"'],
-			vazir: ['"Vazir"'],
-			delius: ['"Delius"'],
+			sans: ["var(--font-sans)"],
+			ghasem: ["var(--font-ghasem)"],
+			vazir: ["var(--font-vazir)"],
+			delius: ["var(--font-delius)"],
 		},
 	},
 	plugins: [require("tailwindcss-animate")],

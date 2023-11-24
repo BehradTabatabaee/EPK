@@ -1,6 +1,6 @@
 "use client";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,15 +9,16 @@ import { useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BiSolidError } from "react-icons/bi";
 import convertStringToHTML from "@/utils/stringToHtml";
-const editorConfiguration = {
-	toolbar: {
-		items: ["undo", "redo", "|", "heading", "|", "bold", "italic", "|", "link"],
-	},
-	language: {
-		ui: "en",
-		content: "ar",
-	},
-};
+import MyEditor from "@/components/myEditor";
+// const editorConfiguration = {
+// 	toolbar: {
+// 		items: ["undo", "redo", "|", "heading", "|", "bold", "italic", "|", "link"],
+// 	},
+// 	language: {
+// 		ui: "en",
+// 		content: "ar",
+// 	},
+// };
 export default function CreateBlog() {
 	const [data, setData] = useState({
 		title: "",
@@ -59,23 +60,7 @@ export default function CreateBlog() {
 									<label htmlFor="title" className="font-sans w-full">
 										متن :
 									</label>
-									<CKEditor
-										editor={ClassicEditor}
-										config={editorConfiguration}
-										onReady={(editor) => {
-											console.log(
-												"CKEditor5 React Component is ready to use!",
-												editor
-											);
-										}}
-										onChange={(event, editor) => {
-											const textInput = editor.getData();
-											setData({
-												...data,
-												field: parser(textInput),
-											});
-										}}
-									/>
+									<MyEditor />
 								</div>
 								<div className="flex flex-col gap-3">
 									<label htmlFor="title" className="font-sans w-full">

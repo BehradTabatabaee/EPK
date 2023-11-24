@@ -17,12 +17,12 @@ export default function Footer() {
 									<input
 										id="email"
 										type="text"
-										className="px-4 py-3 pb-3.5 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300 font-delius text-base lg:w-80 placeholder:font-vazir placeholder:text-base"
+										className="px-4 py-3 w-full md:w-auto mb-4 pb-3.5 border rounded-md bg-gray-900 text-gray-300 border-gray-600 focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300 font-delius text-base lg:w-80 placeholder:font-vazir placeholder:text-base"
 										placeholder="آدرس ایمیل"
 									/>
 									<button
 										type="submit"
-										className="w-full px-6 py-2.5 text-lg font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 font-sans"
+										className="w-full md:w-auto px-6 py-2.5 text-lg font-medium tracking-wider text-white transition-colors duration-300 transform md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 font-sans"
 									>
 										عضویت
 									</button>
