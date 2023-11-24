@@ -4,26 +4,25 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 const titles = [
 	{
-		title: "حوزه نفت ، گاز و پتروشیمی",
+		title: " نفت ، گاز و پتروشیمی",
 		subMenu: [
 			{ title: "بالادستی", href: "/" },
 			{ title: "پایین دستی", href: "/" },
 		],
 	},
 	{
-		title: "حوزه فناوری اطلاعات",
-		subMenu: [{ title: "گروه فانوس", href: "/" }],
+		title: " فناوری اطلاعات",
+		subMenu: [{ title: "گروه InSite", href: "/" }],
 	},
 	{
-		title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
+		title: " آسانسور ، پله برقی و بالابرهای صنعتی",
 		subMenu: [
-			{ title: "گروه آسانسور", href: "/" },
-			{ title: "گروه پله برقی", href: "/" },
-			{ title: "گروه بالابر های صنعتی", href: "/" },
+			{ title: "آسانسور", href: "/" },
+			{ title: "پله برقی", href: "/" },
+			{ title: "بالابر های صنعتی", href: "/" },
 		],
 	},
 ];
@@ -31,7 +30,9 @@ export default function Buisness() {
 	return (
 		<>
 			<AccordionItem value="item-2">
-				<AccordionTrigger className="pr-4 text-lg ">کسب و کار</AccordionTrigger>
+				<AccordionTrigger className="pr-4 text-md font-sans">
+					کسب و کار
+				</AccordionTrigger>
 				<AccordionContent className="cursor-pointer">
 					<Accordion type="single" collapsible>
 						{setTitle()}
@@ -48,20 +49,20 @@ function setTitle() {
 		return (
 			<>
 				<AccordionItem value={`item-${i}`}>
-					<AccordionTrigger className="pr-7 text-lg text-right">
+					<AccordionTrigger className="pr-5 text-sm text-right font-sans">
 						{t.title}
 					</AccordionTrigger>
 					{t.subMenu.map((value) => {
 						return (
 							<>
-								<Link href={value.href}>
-									<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-[#574bd1]/25 ">
+								<a href={value.href} key={value.title}>
+									<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-blue-500/50 duration-300 ">
 										<div className="flex justify-between">
-											<span className="pr-7">{value.title}</span>
-											<BsChevronLeft className="ml-2 text-slate-500" />
+											<span className="pr-7 font-vazir">{value.title}</span>
+											<BsChevronLeft className="ml-2 text-slate-600 mt-1" />
 										</div>
 									</AccordionContent>
-								</Link>
+								</a>
 							</>
 						);
 					})}

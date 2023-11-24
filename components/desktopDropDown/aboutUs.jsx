@@ -1,15 +1,15 @@
 const titles = [
 	[
-		{ title: "شرکت در یک نگاه", href: "/" },
-		{ title: "ارزش های محوری", href: "/" },
-		{ title: "HSEQ", href: "/" },
-		{ title: "سرمایه انسانی", href: "/" },
+		{ title: "شرکت در یک نگاه", href: "/about" },
+		{ title: "ارزش های محوری", href: "/values" },
+		{ title: "HSEQ", href: "/hseq" },
+		{ title: "سرمایه انسانی", href: "/human-resources" },
 	],
 	[
-		{ title: "مدیریت دانش", href: "/" },
-		{ title: "چشم انداز، اهداف و استراتژی", href: "/" },
-		{ title: "بیانیه ماموریت", href: "/" },
-		{ title: "گواهینامه و افتخارات", href: "/" },
+		{ title: "مدیریت دانش", href: "/knowledge-management" },
+		{ title: "چشم انداز، اهداف و استراتژی", href: "/strategy" },
+		{ title: "بیانیه ماموریت", href: "/mission-statement" },
+		{ title: "گواهینامه و افتخارات", href: "/certificates" },
 	],
 ];
 import Link from "next/link";
@@ -31,8 +31,8 @@ function setTitle() {
 					{t.map((value) => {
 						return (
 							<>
-								<Link href={value.href}>
-									<li className="inline-block select-none space-y-1 rounded-md w-52 p-4 leading-none no-underline outline-none transition-colors hover:bg-[#574bd1]/25 cursor-pointer">
+								<Link href={value.href} key={value.title}>
+									<li className="inline-block select-none space-y-1 rounded-md w-60 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 cursor-pointer font-vazir">
 										{value.title}
 									</li>
 								</Link>

@@ -1,20 +1,18 @@
 export default function Slogan() {
-	return (
-		<>
-			<div className="bg-slate-200 flex flex-col justify-start items-center sm:h-[20rem] h-[17rem] sm:pt-12 pt-8">
-				<span className="md:text-4xl sm:text-3xl text-2xl">شعار ما</span>
-				<img
-					src="footer-red.png"
-					alt="divider"
-					className="lg:w-[30rem] md:w-[25rem] sm:w-[20rem] w-[15rem] mt-4"
-				/>
-				<div className="flex gap-32 sm:mt-6 mt-5">
-					<p className="md:text-2xl sm:text-xl md:mt-4 text-lg lg:w-[30rem] md:w-[25rem] sm:w-[20rem] w-[15rem] min-[280px]:w-[12rem] text-center">
-						مشکل داری؟ مشکل داری؟ پفیوز ما داریم زحمت میکشیم تو نمیدونی چه بلایی
-						سر ما اومده!!!
-					</p>
-				</div>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className=" flex flex-col justify-center items-center sm:h-[32rem] h-[30rem] pb-26">
+        <span className="fold:text-2xl text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl  border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0 font-ghasem border-orange-700">
+          کیفیت رقابتی است بی پایان!
+        </span>
+        <div className="flex justify-center items-center pt-9">
+          <p className="w-8/12 text-center font-vazir text-base md:text-lg 2xl:text-2xl !leading-loose">
+            اکسیرپویان با ارائه خدمات و راهکارهای ارتباطی و محتوایی ارزش‌آفرین و
+            نوآورانه و نیز پای‌بندی به اخلاق حرفه‌ای و مسئولیت‌های اجتماعی،
+            رسالت خود را خلق لبخند رضایت در جامعه می‌داند.
+          </p>
+        </div>
+      </div>
+    </>
+  );
 }

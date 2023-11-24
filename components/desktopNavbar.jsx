@@ -1,12 +1,9 @@
 import {
 	NavigationMenu,
 	NavigationMenuContent,
-	NavigationMenuIndicator,
 	NavigationMenuItem,
-	NavigationMenuLink,
 	NavigationMenuList,
 	NavigationMenuTrigger,
-	NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
@@ -15,17 +12,18 @@ import AboutUs from "./desktopDropDown/aboutUs";
 import Buisness from "./desktopDropDown/business";
 import Contact from "./desktopDropDown/contact";
 import Media from "./desktopDropDown/media";
+import Image from "next/image";
 export default function DesktopNavbar() {
 	return (
 		<>
 			<div className="hidden sm:flex flex-row gap-4 justify-between container">
 				<Link href={"/"}>
-					<img src="second-logo.png" alt="logo" className="w-20 my-3" />
+					<img src="/second-logo.png" alt="logo" className="md:w-20 w-16 my-3" />
 				</Link>
 				<NavigationMenu className="flex pb-2">
 					<NavigationMenuList>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								ارتباط با ما
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -33,7 +31,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								رسانه ها
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -41,7 +39,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								کسب و کار
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -49,7 +47,7 @@ export default function DesktopNavbar() {
 							</NavigationMenuContent>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuTrigger className="text-xl">
+							<NavigationMenuTrigger className="md:text-xl text-md font-sans">
 								درباره ما
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
@@ -60,13 +58,16 @@ export default function DesktopNavbar() {
 				</NavigationMenu>
 				<div className="flex justify-center items-center gap-2 pb-4">
 					<Link href={"/"}>
-						<RiTwitterXLine className="text-xl text-white" />
+						<RiTwitterXLine className="text-xl text-white hover:text-blue-500 duration-300" />
+					</Link>
+					<Link
+						href={"https://www.linkedin.com/company/epkco/"}
+						target="_blank"
+					>
+						<AiFillLinkedin className="text-2xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 					<Link href={"/"}>
-						<AiFillLinkedin className="text-2xl text-white" />
-					</Link>
-					<Link href={"/"}>
-						<AiOutlineInstagram className="text-2xl text-white" />
+						<AiOutlineInstagram className="text-2xl text-white hover:text-blue-500 duration-300" />
 					</Link>
 				</div>
 			</div>

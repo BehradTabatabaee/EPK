@@ -4,61 +4,32 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
-const titles = [
-	{
-		title: "انتشارات و مقاله ها",
-		subMenu: [
-			{ title: "حوزه نفت", href: "/" },
-			{ title: "حوزه فناوری", href: "/" },
-			{ title: "حوزه آسانسور", href: "/" },
-		],
-	},
-	{
-		title: "ارتباط رسانه ای",
-		subMenu: [{ title: "تصاویر و ویدیو ها", href: "/" }],
-	},
-];
+const titles = [{ title: "اخبار", href: "/blog" }];
 export default function Media() {
 	return (
 		<>
 			<AccordionItem value="item-3">
-				<AccordionTrigger className="pr-4 text-lg ">رسانه ها</AccordionTrigger>
-				<AccordionContent className="cursor-pointer">
-					<Accordion type="single" collapsible>
-						{setTitle()}
-					</Accordion>
-				</AccordionContent>
+				<AccordionTrigger className="pr-4 text-md font-sans">
+					رسانه ها
+				</AccordionTrigger>
+				{setTitle()}
 			</AccordionItem>
 		</>
 	);
 }
 function setTitle() {
-	let i = 0;
 	return titles.map((t) => {
-		i++;
 		return (
 			<>
-				<AccordionItem value={`item-${i}`}>
-					<AccordionTrigger className="pr-7 text-lg ">
-						{t.title}
-					</AccordionTrigger>
-					{t.subMenu.map((value) => {
-						return (
-							<>
-								<Link href={value.href}>
-									<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-[#574bd1]/25 ">
-										<div className="flex justify-between">
-											<span className="pr-7">{value.title}</span>
-											<BsChevronLeft className="ml-2 text-slate-500" />
-										</div>
-									</AccordionContent>
-								</Link>
-							</>
-						);
-					})}
-				</AccordionItem>
+				<a href={t.href} key={t.title}>
+					<AccordionContent className="p-2 pb-5 pt-5 cursor-pointer border-b hover:bg-blue-500/50 duration-300">
+						<div className="flex justify-between">
+							<span className="pr-4 font-vazir">{t.title}</span>
+							<BsChevronLeft className="ml-2 text-slate-600 mt-1" />
+						</div>
+					</AccordionContent>
+				</a>
 			</>
 		);
 	});

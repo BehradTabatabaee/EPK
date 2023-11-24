@@ -1,5 +1,3 @@
-// ye bug riz dare
-// bishtar az div linke kesh omade
 const titles = [
 	{
 		title: "حوزه نفت ، گاز و پتروشیمی",
@@ -10,7 +8,7 @@ const titles = [
 	},
 	{
 		title: "حوزه فناوری اطلاعات",
-		subMenu: [{ title: "گروه فانوس", href: "/" }],
+		subMenu: [{ title: "InSite گروه", href: "/" }],
 	},
 	{
 		title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
@@ -35,13 +33,15 @@ function setTitle() {
 	return titles.map((t) => {
 		return (
 			<>
-				<div className="flex flex-col">
-					<span className="p-4 text-slate-600 text-md">{t.title}</span>
+				<div className="flex flex-col items-end">
+					<span className="p-4 text-slate-500 text-md font-sans">
+						{t.title}
+					</span>
 					{t.subMenu.map((value) => {
 						return (
 							<>
-								<Link href={value.href}>
-									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-[#574bd1]/25 ">
+								<Link href={value.href} key={value.title} className="w-fit">
+									<li className="inline-block select-none space-y-1 rounded-md w-48 p-4 leading-none no-underline outline-none transition-colors hover:bg-blue-500/50 duration-300 font-vazir">
 										{value.title}
 									</li>
 								</Link>
