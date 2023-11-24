@@ -15,7 +15,7 @@ const titles = [
 	},
 	{
 		title: " فناوری اطلاعات",
-		subMenu: [{ title: "InSite Group", href: "/" }],
+		subMenu: [{ title: "گروه InSite", href: "/" }],
 	},
 	{
 		title: " آسانسور ، پله برقی و بالابرهای صنعتی",

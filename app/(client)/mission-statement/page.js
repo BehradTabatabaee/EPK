@@ -1,6 +1,6 @@
 export default function Misson_statement() {
   return (
-    <div className="container min-w-[70vw]">
+    <div className="container min-w-[70vw] min-h-[40vh]">
       <div className="flex flex-col justify-center items-center pt-10">
         <span className="text-center self-center font-bold md:text-4xl sm:text-3xl text-2xl font-sans border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0  border-orange-700">
           بیانیه ماموریت

@@ -6,7 +6,7 @@ export default function HumanResources() {
           سرمایه انسانی
         </h1>
       </div>
-      <p className=" w-full text-slate-600  text-justify lg:text-justify px-2 py-10 !leading-10  text-sm sm:text-base md:text-lg lg:text-sm min-[1175px]:text-sm min-[1300px]:text-base 2xl:text-base min-[2160px]:text-lg  font-vazir">
+      <p className=" w-full text-slate-600  text-justify lg:text-justify px-2 py-10 !leading-10  text-sm sm:text-base md:text-lg lg:text-sm 2xl:text-base font-vazir">
         در دنیای امروز که فناوری و دانش نقش مهمی در رشد و توسعه صنایع مختلف
         دارند ، هر شرکتی که بخواهد در بازار رقابتی برتری یابد ، باید به منابع
         انسانی متخصص و خبره اهمیت بدهد. این منابع انسانی توانایی ایجاد نوآوری ،

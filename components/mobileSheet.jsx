@@ -8,12 +8,18 @@ import AboutUs from "./mobileDropdown/aboutUs";
 import Buisness from "./mobileDropdown/business";
 import Media from "./mobileDropdown/media";
 import Contact from "./mobileDropdown/contact";
+import { usePathname } from "next/navigation";
 export default function MobileSheet() {
+	const pathname = usePathname();
+	let text = "text-black"
+	if (pathname == "/") {
+		text = "text-white"
+	}
 	return (
 		<>
 			<Sheet>
 				<SheetTrigger className="absolute z-50 mt-4 mr-3 w-9 h-9">
-					<CiMenuFries className="text-2xl m-auto text-black" />
+					<CiMenuFries className={`text-2xl m-auto ${text}`} />
 				</SheetTrigger>
 				<SheetContent className="w-[250px] overflow-scroll ">
 					<div className="bg-gray-900 h-[10rem]">

@@ -17,7 +17,7 @@ export default function About() {
 					</p>
 				</div>
 				<div className="w-full">
-					<img src="/elevatormd.jpg" alt="laptop" className="w-full !aspect-video rounded-2xl"/>
+					<img src="/bureau2.jpg" alt="laptop" className="w-full !aspect-video rounded-2xl"/>
 				</div>
 			</div>
 		</div>

@@ -3,7 +3,7 @@ export default function MobileNavbar() {
 	return (
 		<>
 			<div className="flex sm:hidden">
-				<MobileSheet />
+				<MobileSheet/>
 			</div>
 		</>
 	);

@@ -6,7 +6,7 @@ export default function Blog() {
 			<div className="sm:hidden flex justify-center items-center pt-6">
 				<span className="text-base font-sans">اخبار</span>
 			</div>
-			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-5 m-auto w-3/4">
+			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-10 m-auto w-3/4">
 				<Mapper />
 			</div>
 		</>

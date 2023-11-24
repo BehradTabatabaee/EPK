@@ -8,7 +8,7 @@ const titles = [
 	},
 	{
 		title: "حوزه فناوری اطلاعات",
-		subMenu: [{ title: "InSite Group", href: "/" }],
+		subMenu: [{ title: "InSite گروه", href: "/" }],
 	},
 	{
 		title: "حوزه آسانسور ، پله برقی و بالابرهای صنعتی",
