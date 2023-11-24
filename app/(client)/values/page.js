@@ -9,7 +9,7 @@ import {
 export default function Values() {
 	return (
 		<div className="flex flex-col justify-center items-center p-24">
-			<h1 className="text-center text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-16 font-sans w-full">
+			<h1 className="text-center text-xl font-bold md:text-2xl lg:text-3xl xl:text-4xl mb-16 font-sans max-w-full min-w-1/2 border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0 border-orange-700">
 				ارزش های محوری 
 			</h1>
 			<Accordion type="single" collapsible className="w-screen xl:w-2/3">

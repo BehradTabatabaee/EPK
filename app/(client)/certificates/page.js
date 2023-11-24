@@ -7,11 +7,7 @@ export default async function Certificates() {
 			</div>
 			<div className="flex gap-20 flex-wrap pt-16 justify-center items-center p-5">
 				<Mapper />
-				<Mapper />
-				<Mapper />
-				<Mapper />
-				<Mapper />
-				<Mapper />
+
 			</div>
 		</>
 	);

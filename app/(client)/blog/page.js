@@ -8,7 +8,6 @@ export default function Blog() {
 			</div>
 			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-5 m-auto w-3/4">
 				<Mapper />
-				<Mapper />
 			</div>
 		</>
 	);
