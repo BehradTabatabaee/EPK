@@ -11,13 +11,8 @@ const editorConfiguration = {
 		content: "ar",
 	},
 };
-export default function Editor() {
-	const [data, setData] = useState({
-		title: "",
-		image: "",
-		field: "",
-		summary: "",
-	});
+export default function Editor({data,setData}) {
+
 	return (
 		<CKEditor
 			editor={ClassicEditor}

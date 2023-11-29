@@ -1,6 +1,4 @@
 "use client";
-// import { CKEditor } from "@ckeditor/ckeditor5-react";
-// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -10,15 +8,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BiSolidError } from "react-icons/bi";
 import convertStringToHTML from "@/utils/stringToHtml";
 import MyEditor from "@/components/myEditor";
-// const editorConfiguration = {
-// 	toolbar: {
-// 		items: ["undo", "redo", "|", "heading", "|", "bold", "italic", "|", "link"],
-// 	},
-// 	language: {
-// 		ui: "en",
-// 		content: "ar",
-// 	},
-// };
+
 export default function CreateBlog() {
 	const [data, setData] = useState({
 		title: "",
@@ -26,6 +16,7 @@ export default function CreateBlog() {
 		field: "",
 		summary: "",
 	});
+	console.log(data);
 	const [isValid, setIsValid] = useState(0);
 	return (
 		<>
@@ -57,10 +48,10 @@ export default function CreateBlog() {
 									/>
 								</div>
 								<div className="flex flex-col gap-3">
-									<label htmlFor="title" className="font-sans w-full">
+									<label htmlFor="field" className="font-sans w-full">
 										متن :
 									</label>
-									<MyEditor />
+									<MyEditor data={data} setData={setData}/>
 								</div>
 								<div className="flex flex-col gap-3">
 									<label htmlFor="title" className="font-sans w-full">
@@ -81,7 +72,7 @@ export default function CreateBlog() {
 									></textarea>
 								</div>
 								<div className="flex flex-col gap-3">
-									<label htmlFor="title" className="font-sans w-full">
+									<label htmlFor="picture" className="font-sans w-full">
 										عکس :
 									</label>
 									<UploadForm Data={data} SetData={setData} />

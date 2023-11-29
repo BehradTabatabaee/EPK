@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-function MyEditor() {
+function MyEditor({data,setData}) {
 	const Editor = React.useMemo(
 		() =>
 			dynamic(
@@ -15,7 +15,7 @@ function MyEditor() {
 			/* list variables which should trigger a re-render here */
 		]
 	);
-	return <Editor />;
+	return <Editor  data={data} setData={setData}/>;
 }
 
 export default MyEditor;
