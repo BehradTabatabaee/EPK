@@ -9,7 +9,7 @@ export default function Values() {
 		<div className="container min-w-full">
 			<div className="flex justify-center items-center pt-20">
 				<span className="text-center self-center font-bold md:text-4xl sm:text-3xl xs:text-2xl text-xl font-sans border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0  border-orange-700">
-					چشم انداز، اهداف و استراتژی
+					ارزش های محوری
 				</span>
 			</div>
 			<div className="flex flex-col gap-10 justify-center items-center pt-20">

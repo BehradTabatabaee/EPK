@@ -45,6 +45,11 @@ const NavigationMenuTrigger = React.forwardRef(
 		<NavigationMenuPrimitive.Trigger
 			ref={ref}
 			className={cn(navigationMenuTriggerStyle(), "group", className)}
+			onClick={(e) => {
+				if (window.innerWidth > 1366) {
+					e.preventDefault()
+				}
+			}}
 			{...props}
 		>
 			{/* <ChevronDown

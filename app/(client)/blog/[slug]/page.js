@@ -14,7 +14,7 @@ export default async function BlogPage({ params }) {
 	}
 	return (
 		<>
-			<div className="container pt-20 flex justify-center items-center min-w-[70vw] max-w-[70vw]">
+			<div className="container pt-20 flex justify-center items-center min-w-[70vw]">
 				<div className="w-full items-center justify-center sm:items-start sm:justify-start flex flex-col sfold:gap-7 xsfold:gap-8 sm:gap-10 md:gap-12 gap-6">
 					<h1 className="text-2xl md:text-4xl xl:text-5xl sm:text-3xl font-bold font-sans">
 						{data.title}

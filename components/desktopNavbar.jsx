@@ -24,12 +24,11 @@ export default function DesktopNavbar() {
 						className="md:w-20 w-16 my-3"
 					/>
 				</Link>
-				<NavigationMenu className="flex pb-2">
+				<NavigationMenu className="flex">
 					<NavigationMenuList>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
 								className="md:text-xl text-md font-sans"
-								onClick={(e) => e.preventDefault()}
 							>
 								ارتباط با ما
 							</NavigationMenuTrigger>
@@ -40,7 +39,6 @@ export default function DesktopNavbar() {
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
 								className="md:text-xl text-md font-sans"
-								onClick={(e) => e.preventDefault()}
 							>
 								رسانه ها
 							</NavigationMenuTrigger>
@@ -51,7 +49,6 @@ export default function DesktopNavbar() {
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
 								className="md:text-xl text-md font-sans"
-								onClick={(e) => e.preventDefault()}
 							>
 								کسب و کار
 							</NavigationMenuTrigger>
@@ -62,7 +59,6 @@ export default function DesktopNavbar() {
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
 								className="md:text-xl text-md font-sans"
-								onClick={(e) => e.preventDefault()}
 							>
 								درباره ما
 							</NavigationMenuTrigger>
@@ -72,7 +68,7 @@ export default function DesktopNavbar() {
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
-				<div className="flex justify-center items-center gap-2 pb-4">
+				<div className="flex justify-center items-center gap-2">
 					<Link href={"/"}>
 						<RiTwitterXLine className="text-xl text-white hover:text-blue-500 duration-300" />
 					</Link>

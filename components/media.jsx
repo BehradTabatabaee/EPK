@@ -12,7 +12,7 @@ export default async function Media() {
 						رسانه ها
 					</h1>
 				</div>
-				<div className="flex flex-col !w-full !p-0 h-[70vh] sm:h-[200vh] min-[720px]:h-[120vh] md:h-[90vh] min-[820px]:h-[70vh] min-[844px]:h-[130vh] min-[896px]:h-[140vh] min-[912px]:h-[80vh] min-[914px]:h-[150vh] lg:h-[90vh] xl:h-[90vh] 2xl:h-[80vh] gap-3 mt-12">
+				<div className="flex flex-col !w-full !p-0 h-[70vh] sm:h-[200vh] xsm:h-[100vh] S8:h-[150vh] md:h-[100vh] air:h-[150vh] surface:h-[100vh] A51:h-[150vh] lg:h-[100vh] xl:h-[90vh] 2xl:h-[80vh] xpc:h-[100vh] gap-3 mt-12">
 					<Link
 						href={`/blog/${data[0].id}`}
 						className="relative w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"
@@ -61,7 +61,7 @@ export default async function Media() {
 				<div className="sm:text-left text-center">
 					<Link
 						href="/blog"
-						className="inline-flex lg:ml-6 justify-center items-center lg:justify-end mt-10 lg:items-end group transition duration-300"
+						className="inline-flex justify-center items-center lg:justify-end mt-10 lg:items-end group transition duration-300"
 					>
 						<h2 className="text-center text-lg sm:text-xl md:text-2xl xl:text-left ml-0.5 mt-2 font-sans">
 							انتشارات و مقالات

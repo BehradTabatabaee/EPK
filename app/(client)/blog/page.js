@@ -3,10 +3,12 @@ import { Button } from "@/components/ui/button";
 export default function Blog() {
 	return (
 		<>
-			<div className="sm:hidden flex justify-center items-center pt-6">
-				<span className="text-base font-sans">اخبار</span>
+			<div className="flex flex-col justify-center items-center pt-12">
+				<span className="text-center self-center font-bold md:text-4xl sm:text-3xl text-2xl font-sans border border-l-0 border-t-0 border-b-[2px] pb-5 border-r-0  border-orange-700">
+					اخبار
+				</span>
 			</div>
-			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-10 m-auto w-3/4">
+			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-10 m-auto w-screen sm:w-3/4">
 				<Mapper />
 			</div>
 		</>
@@ -16,12 +18,16 @@ async function Mapper() {
 	const data = await db.news.findMany();
 	return data.map((e) => {
 		return (
-			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-screen min-[1024px]:max-w-[33vw] min-[1440px]:max-w-[34vw] 2xl:max-w-[20vw] min-[1920px]:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
-				<img src={e.image} alt="" className="rounded-t-2xl h-[25vh] w-full" />
+			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-screen lg:max-w-[30vw] xxl:max-w-[33vw] 2xl:max-w-[20vw] pc:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
+				<img
+					src={e.image}
+					alt=""
+					className="rounded-t-2xl aspect-video w-full"
+				/>
 				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4">
 					{e.title}
 				</h1>
-				<div className="line-clamp-2 text-center sm:text-right sm:text-lg font-vazir px-4 max-w-[95%]" >
+				<div className="line-clamp-2 text-center sm:text-right sm:text-lg font-vazir px-4 max-w-[95%]">
 					{e.summary}
 				</div>
 				<a
