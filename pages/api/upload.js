@@ -18,7 +18,7 @@ export default async (req, res) => {
 			// console.log(fields, files)
 			// console.log(files.file[0].filepath)
 			var oldPath = files.file[0].filepath;
-			var newPath = `./public/${files.file[0].originalFilename}`;
+			var newPath = `./public/uploads/${files.file[0].originalFilename}`;
 			mv(oldPath, newPath, function (err) {});
 			res.status(200).json({ fields, files });
 		});
