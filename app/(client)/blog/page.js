@@ -1,6 +1,10 @@
 import { db } from "@/prisma/client";
-import { Button } from "@/components/ui/button";
-export default function Blog() {
+// import { revalidatePath } from 'next/cache'
+// revalidatePath('/blog', 'page')
+export const dynamic = 'force-dynamic';
+export default async  function Blog() {
+	const data = await db.news.findMany();
+
 	return (
 		<>
 			<div className="flex flex-col justify-center items-center pt-12">
@@ -9,14 +13,14 @@ export default function Blog() {
 				</span>
 			</div>
 			<div className="flex gap-10 flex-wrap pt-16 justify-center items-center p-10 m-auto w-screen sm:w-3/4">
-				<Mapper />
+			{data.map((e) => 
+				<Mapper e={e}/>
+			)}
 			</div>
 		</>
 	);
 }
-async function Mapper() {
-	const data = await db.news.findMany();
-	return data.map((e) => {
+ function Mapper({e}) {
 		return (
 			<div className="justify-center items-center sm:justify-start sm:items-start gap-6 flex flex-col duration-300 delay-75 w-screen lg:max-w-[30vw] xxl:max-w-[33vw] 2xl:max-w-[20vw] pc:max-w-[15vw] rounded-2xl border-b-[2px] hover:border-transparent border-black/30 hover:shadow-2xl">
 				<img
@@ -24,7 +28,7 @@ async function Mapper() {
 					alt=""
 					className="rounded-t-2xl aspect-video w-full"
 				/>
-				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4">
+				<h1 className="sm:text-lg lg:text-xl text-center sm:text-right font-sans px-4 line-clamp-1">
 					{e.title}
 				</h1>
 				<div className="line-clamp-2 text-center sm:text-right sm:text-lg font-vazir px-4 max-w-[95%]">
@@ -46,5 +50,5 @@ async function Mapper() {
 				</a>
 			</div>
 		);
-	});
+
 }

@@ -2,8 +2,12 @@ import { FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
 import { db } from "@/prisma/client";
 import Image from "next/image";
+export const dynamic = 'force-dynamic';
 export default async function Media() {
-	const data = await db.news.findMany({ take: 3 });
+	const data = await db.news.findMany({ orderBy: {
+		id: 'desc',
+	},
+	take: 3,});
 	return (
 		<>
 			<div className="container lg:max-w-[90vw] xl:max-w-[80vw] 2xl:max-w-[70vw] min-w-fit mt-20">

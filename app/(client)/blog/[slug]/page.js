@@ -9,6 +9,7 @@ export default async function BlogPage({ params }) {
 	const data = await db.news.findUnique({
 		where: { id: Number(params.slug) },
 	});
+
 	if (!data?.id) {
 		notFound();
 	}
@@ -23,7 +24,7 @@ export default async function BlogPage({ params }) {
 						<div className="flex fold:gap-2">
 							<BsCalendarDate className="text-xl sm:text-2xl mt-0.5 sm:mt-[0.0625rem]" />
 							<p className="text-lg sm:text-xl font-delius">
-								{data.created_at.getDate()}/{data.created_at.getMonth()}/
+								{data.created_at.getDate()}/{data.created_at.getUTCMonth() + 1}/
 								{data.created_at.getFullYear()}
 							</p>
 						</div>
