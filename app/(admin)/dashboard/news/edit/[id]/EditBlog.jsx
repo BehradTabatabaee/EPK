@@ -4,7 +4,6 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import UploadForm from "@/components/adminDashboard/UploadForm";
 import { useEffect, useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { BiSolidError } from "react-icons/bi";
@@ -26,7 +25,6 @@ export default function EditBlog({ blogData }) {
     summary: blogData.summary,
   });
   const [isValid, setIsValid] = useState(0);
-// console.log(data)
   return (
     <>
       <div className="flex flex-wrap h-screen w-screen overflow-y-scroll">
@@ -96,24 +94,39 @@ export default function EditBlog({ blogData }) {
                   </textarea>
                 </div>
                 <label htmlFor="image">عکس :</label>
-                <img src={`/${data.image}`} id="image" className="w-5/12 aspect-video" />
+                <img
+                  src={`${data.image}`}
+                  id="image"
+                  className="w-5/12 aspect-video"
+                />
                 <div className="flex flex-col gap-3">
                   <label htmlFor="image" className="font-sans w-full">
                     عکس جدید:
                   </label>
-                  <UploadForm Data={data} SetData={setData} />
+                  <Input
+                    autoComplete="off"
+                    type="text"
+                    name="image"
+                    onChange={(e) =>
+                      setData({
+                        ...data,
+                        image: e.target.value,
+                      })
+                    }
+                    className="font-vazir"
+                  />
                 </div>
               </div>
               <Button
                 className="text-base w-40 font-sans"
                 onClick={() => {
-                  let response = updateNews(data,blogData.id);
+                  let response = updateNews(data, blogData.id);
                   response.then((e) => {
                     if (e.message) {
                       setIsValid(1);
                     } else {
                       setIsValid(0);
-                    //   location.href = "/dashboard/news";
+                        location.href = "/dashboard/news";
                     }
                   });
                 }}
@@ -131,15 +144,15 @@ function parser(data) {
   let field = convertStringToHTML(data);
   return field;
 }
-async function updateNews(data,id) {
-    console.log(data)
+async function updateNews(data, id) {
+  console.log(data);
   const response = await fetch(`/api/news/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   });
   const backeddata = await response.json();
-  console.log(backeddata)
+  console.log(backeddata);
   return backeddata;
 }
 function setModal(valid) {

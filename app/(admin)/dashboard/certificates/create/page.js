@@ -10,7 +10,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import UploadForm from "@/components/adminDashboard/UploadForm";
+
 export default function create() {
   const [data, setData] = useState({
     title: "",
@@ -42,7 +42,22 @@ export default function create() {
             }
             className="font-vazir"
           />
-          <UploadForm Data={data} SetData={setData} />
+          <label htmlFor="image" className="font-sans">
+            لینک تصویر :
+          </label>
+          <Input
+            autoComplete="off"
+            type="text"
+            name="image"
+            defaultValue={data.image}
+            onChange={(e) =>
+              setData({
+                ...data,
+                image : e.target.value,
+              })
+            }
+            className="font-vazir"
+          />
           <Button
             className="text-lg font-sans"
             onClick={() => {

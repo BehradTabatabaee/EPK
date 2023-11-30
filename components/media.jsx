@@ -21,7 +21,7 @@ export default async function Media() {
 						href={`/blog/${data[0].id}`}
 						className="relative w-full h-1/3 sm:h-3/5 bg-slate-500 rounded-3xl overflow-hidden transition-all hover:opacity-90"
 					>
-						<Image src={`/${data[0].image}`} fill={true} priority={true} />
+						<Image src={`${data[0].image}`} fill={true} priority={true} />
 						<div className="absolute bottom-12 sm:bottom-16 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 							<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 								{data[0].title}
@@ -36,7 +36,7 @@ export default async function Media() {
 							href={`/blog/${data[1].id}`}
 							className="relative w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
-							<Image src={`/${data[1].image}`} fill={true} priority={true} />
+							<Image src={`${data[1].image}`} fill={true} priority={true} />
 							<div className="absolute bottom-11 sm:bottom-12 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[1].title}
@@ -50,7 +50,7 @@ export default async function Media() {
 							href={`/blog/${data[2].id}`}
 							className="relative w-full sm:w-1/2 bg-slate-500 h-1/2 sm:h-full rounded-3xl overflow-hidden transition-all hover:opacity-90"
 						>
-							<Image src={`/${data[2].image}`} fill={true} priority={true} />
+							<Image src={`${data[2].image}`} fill={true} priority={true} />
 							<div className="absolute bottom-11 sm:bottom-12 right-4 sm:right-6 lg:right-7 xl:right-8 text-white flex flex-col gap-2">
 								<h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-sans">
 									{data[2].title}

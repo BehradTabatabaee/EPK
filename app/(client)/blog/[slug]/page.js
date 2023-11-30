@@ -36,7 +36,7 @@ export default async function BlogPage({ params }) {
 						</div>
 					</div>
 					<img
-						src={`/${data.image}`}
+						src={`${data.image}`}
 						alt=""
 						className="rounded-xl w-full aspect-video"
 					/>
